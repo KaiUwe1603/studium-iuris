@@ -9,45 +9,36 @@
         <script src="https://kit.fontawesome.com/24de6c6b51.js" crossorigin="anonymous"></script>
     </head>
     <body class="bodystaat">
+        <script src="myScript.js"></script>
         <header>
-            <nav>    
-                <ul>
-                    <li><a href="index.html" target="_self"><i class="fa fa-home"></i>Startseite</a></li>
-                    <li><a href="uebersicht_strafrecht.html" target="_self" style="background-color: #1E90FF;"><i class="fa fa-gavel"></i>Strafrecht</a>
-                        <ul>
-                            <li class="woodbrown"><a href="AT_strafrecht.html" target="_self">Allgemeiner Teil</a>
-                                <ul>
-                                    <li><a href="vollendetes_delikt_s.html" target="_self">Vollendetes Delikt</a></li>
-                                    <li><a href="versuchs_delikt_s.html" target="_self">Versuchsdelikt</a></li>
-                                    <li><a href="coming_soon.html" target="_self">Täterschaft und Teilnahme</a></li>
-                                    <li><a href="coming_soon.html" target="_self">Unterlassen</a></li>
-                                </ul>
-                            </li>
-                            <li class="yonderblue"><a href="BT_strafrecht.html" target="_self">Besonderer Teil</a></li>
-                            <li class="coralred"><a href="Definitionen_s.html" target="_self">Definitionen</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="uebersicht_zivilrecht.html" target="_self" style="background-color: #FFC0CB;"><i class="fa fa-scale-balanced"></i>Zivilrecht</a>
-                        <ul>
-                            <li class="maxbluegreen"><a href="fallbearbeitung_z.html" target="_self">Fallbearbeitung</a></li>
-                            <li class="coralred"><a href="Definitionen_z.html" target="_self">Definitionen</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="uebersicht_oeffentliches-recht.html" target="_self" style="background-color: #808080;"><i class="fa fa-landmark-flag"></i>Öffentliches Recht</a>
-                        <ul>
-                            <li class="nebulablue"><a href="staatsorga.html" target="_self">Staatsorganisationsrecht</a>
-                                <ul>
-                                    <li><a href="abstrakte_normenkontrolle.html" target="_self">Abstrakte Normenkontrolle</a></li>
-                                    <li><a href="coming_soon.html" target="_self">Konkrete Normkontrolle</a></li>
-                                    <li><a href="organstreit.html" target="_self">Organstreit</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="grundrechte.html" target="_self" >Grundrechte</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="ueber_mich.html" target="_self"><i class="fa fa-user"></i>Über die Seite</a></li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="activeH"><i class="fa fa-house" style="padding-right: 5px;"></i>Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-gavel" style="padding-right: 5px;"></i>Strafrecht</button>
+                      <div class="dropdown-content">
+                          <a href="AT_strafrecht.html">Allgemeiner Teil</a>
+                          <a href="BT_strafrecht.html">Besonderer Teil</a>
+                          <a href="Definitionen_s.html">Definitionen</a>
+                      </div>
+                  </div>
+                <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-scale-balanced" style="padding-right: 5px;"></i>Zivilrecht</button>
+                    <div class="dropdown-content">
+                        <a href="coming_soon.html">Schuldrecht</a>
+                        <a href="coming_soon.html">Sachenrecht</a>
+                        <a href="Definitionen_z.html">Definitionen</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn"><i class="fa fa-landmark-flag" style="padding-right: 5px;"></i>Öffentliches Recht</button>
+                    <div class="dropdown-content">
+                        <a href="grundrechte.html">Grundrechte</a>
+                        <a href="staatsorga.html">Staatsorganisationsrecht</a>
+                        <a href="coming_soon.html">Verwaltungsrecht</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
         </header>
         <h1 style="text-align: center;">Abstrakte Normenkontrolle</h1>
         <p style="text-align: center;">
@@ -185,7 +176,6 @@
                 </ol>
             </li>
         </ol>
-    <script src="myScript.js"></script>
     </body>
     <footer>
         <button class="footerbutton">
