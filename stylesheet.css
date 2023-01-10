@@ -206,7 +206,6 @@ footer{
 
 /*Collapsibles*/
 .collapsible{
-    /*text-align: left;*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     background-color: skyblue;
@@ -216,9 +215,8 @@ footer{
 }
 
 
-.collapsible:hover, .active{
+.active, .collapsible:hover{
     color: dimgrey;
-    transition: 00.35s;
 }
 
 .content{
@@ -226,8 +224,8 @@ footer{
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.25s linear; 
     background-color: skyblue;
+    transition: max-height 0.2s ease-out;
 }
 
 
