@@ -83,22 +83,50 @@ header{
 
 .activeH {
     background-color: orange;
+    color: white;
     border-radius: 10px;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
 }
 
 .activeSR {
     background-color: #1E90FF;
+    color: white;
     border-radius: 10px;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
 }
 
 .activeZR {
     background-color: #FFC0CB;
+    color: white;
     border-radius: 10px;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
 }
 
 .activeÖR {
-    background-color: #D3D3D3;
+    background-color: #bababa;
+    color: white;
     border-radius: 10px;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
 }
 
 .topnav .icon {
@@ -140,7 +168,7 @@ header{
     text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn, #H{
+.topnav a:hover, .dropdown:hover .dropbtn{
     color: white;
     background-color: #1E90FF;
     border-radius: 10px;
@@ -216,7 +244,7 @@ footer{
     font-size: 15px;
   }
   
-  .active, .collapsible:hover {
+.collapsible:hover, .active{
     background-color: #555;
   }
   
@@ -574,4 +602,22 @@ footer{
 .umuds_txt{
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/*Verwaltungsrecht*/
+.div_r1c1{
+    width: 20%;
+    float: left;
+    background-color: green;
+}
+
+.div_r1c2{
+    width: 20%;
+    background-color: green;
+}
+
+.div_r1c3{
+    width: 20%;
+    float: right;
+    background-color: green;
 }
