@@ -254,43 +254,7 @@ footer{
 
 
 /*Mainpage*/
-.selection{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    height: 200px;
-    font-size: calc(1em + 3vw);
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: none;
-    transition: all 0.5s;
-    cursor: pointer;
-}
 
-.selection a{
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.selection a:after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    right: -40px;
-    transition: 0.5s;
-}
-
-.selection:hover a{
-    padding-right: 50px;
-}
-
-.selection:hover a:after{
-    opacity: 1;
-    right: 0;
-}
 
 
 /*Selections*/
@@ -338,7 +302,7 @@ footer{
     text-align: center;
     width: 100%;
     height: 200px;
-    font-size: calc(1em + 2vw);
+    font-size: calc(1em + 3vw);
     margin-bottom: 20px;
     border-radius: 10px;
     border: none;
