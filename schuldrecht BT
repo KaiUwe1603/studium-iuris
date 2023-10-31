@@ -48,16 +48,7 @@
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
               </div>
         </header>
-        <p>Diese Website wurde für Benutzer am PC optimiert. Bei mobiler Nutzung können Fehler und "Unschönheiten" auftreten. ^^</p>
-        <button class="selection height_3" style="background-color: #1E90FF;">
-            <a href="strafrecht.html" class="white">Strafrecht</a>
-        </button>
-        <button class="selection height_3" style="background-color: #FFC0CB;">
-            <a href="zivilrecht.html" class="white">Zivilrecht</a>
-        </button>
-        <button class="selection height_3" style="background-color: #D3D3D3;">
-            <a href="oeffentliches-recht.html" class="white">Öffentliches Recht</a>
-        </button>
+       
         <script src="myScript.js"></script>
     </body>
     <footer>
