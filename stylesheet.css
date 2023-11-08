@@ -223,17 +223,17 @@ footer{
 
 .footerbutton{
     border: none;
-    background-color: black;    
+    background-color: #1E90FF;    
 }
 
 .footerlink{
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 /*Collapsibles*/
 .collapsible {
-    color: blue;
+    color: #0000FF;
     background-color: inherit;
     cursor: pointer;
     padding: 18px;
