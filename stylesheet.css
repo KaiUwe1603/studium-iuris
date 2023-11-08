@@ -242,6 +242,7 @@ footer{
     text-align: left;
     outline: none;
     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
   
 .content {
@@ -546,42 +547,58 @@ footer{
 
 
 /*Sachenrecht*/
-#tbsr {
-    width: 70%;
-}
-
-#tbsr td, th{
-    text-align: center;
-    border: black 1px solid;
-    border-radius: 5px;
+#tbl_sr{
     border-collapse: separate;
     border-spacing: 10px;
+    text-align: center;
 }
 
-#tbsr tr th{
-    border: 1px solid blue;
+#tbl_sr tr:first-child th{
+    border: 2px solid #168AFF;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(2) td:first-child{
-    border: 1px solid blue;
+#tbl_sr tr:nth-child(2) td:first-child{
+    border: 2px solid #168AFF;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(2) td:nth-child(3){
-    border: 1px solid blue;
+#tbl_sr tr:nth-child(2) td:nth-child(2){
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(3) td:nth-child(1){
-    border: 1px solid blue;
+#tbl_sr tr:nth-child(2) td:nth-child(3){
+    border: 2px solid #168AFF;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(3) td:nth-child(2){
-    border: 1px solid blue;
+#tbl_sr tr:nth-child(3) td:nth-child(1){
+    border: 2px solid #168AFF;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(2) td{
-    width: 23.33%;
+#tbl_sr tr:nth-child(3) td:nth-child(2){
+    border: 2px solid #168AFF;
+    border-radius: 5px;
 }
 
-#tbsr tr:nth-child(3) td{
-    width: 12.66%;
+#tbl_sr tr:nth-child(3) td:nth-child(3){
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#tbl_sr tr:nth-child(4) td:nth-child(1){
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#tbl_sr tr:nth-child(4) td:nth-child(2){
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#tbl_sr tr:nth-child(5) td:nth-child(2){
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
