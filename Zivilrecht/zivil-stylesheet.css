@@ -1,0 +1,1583 @@
+/*Zivilrecht Global*/
+body{
+    background-color: #ffe4e1;
+}
+
+
+/*Definitionen*/
+
+
+/*Schuldrecht AT*/
+#table_stv{
+    width: 50%;
+    height: 200px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+#table_stv tr:first-child td:first-child{
+    height: 50px;
+    background-color: #1E90FF;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#table_stv tr:nth-child(2) td:nth-child(1){
+    height: 50px;
+    background-color: #1E90FF;
+    border-radius: 5px;
+}
+
+#table_stv td:nth-child(1){
+    height: 50px;
+    width: 50%;
+    background-color: #FF1E90;
+    border-radius: 5px;
+}
+
+#table_stv td:nth-child(2){
+    height: 50px;
+    width: 50%;
+    background-color: #90FF1E;
+    border-radius: 5px;
+}
+
+#table_stv tr:nth-child(3){
+    font-weight: bolder;
+}
+
+#tbl_gfk{
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+#tbl_gfk td{
+    padding: 5px;
+}
+
+#tbl_gfk tr:first-child td:first-child{
+    background-color: #A9A9A9;
+}
+
+#tbl_gfk tr:first-child td:nth-child(2){
+    background-color: #1E90FF;
+}
+
+#tbl_gfk tr:first-child td:nth-child(3){
+    background-color: #A9A9A9;
+}
+
+#tbl_gfk tr:nth-child(2){
+    height: 66px;
+}
+
+#tbl_gfk tr:nth-child(2) td:nth-child(1){
+    background-color: #1E90FF;
+}
+
+#tbl_gfk tr:nth-child(2) td:nth-child(5){
+    background-color: #1E90FF;
+}
+
+#tbl_gfk tr:nth-child(2) td:nth-child(2){
+    background: linear-gradient(to bottom, #1E90FF 25%, #FE1EFF 100%);
+}
+
+#tbl_gfk tr:nth-child(2) td:nth-child(3){
+    background: linear-gradient(to bottom, #1E90FF 25%, #FF8D1E 100%);
+}
+
+#tbl_gfk tr:nth-child(2) td:nth-child(4){
+    background: linear-gradient(to bottom, #1E90FF 25%, #1FFF1E 100%);
+}
+
+#tbl_gfk tr:nth-child(3) td{
+    text-align: initial;
+    vertical-align: top;
+}
+
+#tbl_gfk tr:nth-child(3) td:nth-child(1){
+    background-color: #FE1EFF;
+}
+
+#tbl_gfk tr:nth-child(3) td:nth-child(2){
+    background-color: #ff8d1e;   
+}
+
+#tbl_gfk tr:nth-child(3) td:nth-child(2) > ol{
+    margin-top: 0;
+}
+
+#tbl_gfk tr:nth-child(3) td:nth-child(3){
+    background-color: #1FFF1E;   
+}
+
+
+/*Schuldrecht BT*/
+.olbracket{
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.olbracket > li{
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+}
+
+.olbracket > li::before{
+    content: counter(my-counter, upper-alpha)") ";
+    font-weight: bold;
+}
+
+.olbracket ol{
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.olbracket > li > ol > li{
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+}
+
+.olbracket > li > ol > li::before{
+    content: counter(my-counter, lower-alpha)") ";
+    font-weight: bold;
+}
+
+#tbl-schenkung tr:first-child td{
+    width: 35%;
+    background-color: #034f84;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#tbl-schenkung tr:first-child td:last-child{
+    width: 20%;
+    background-color: initial;
+    color: initial;
+    border: 3px dashed #A9A9A9;
+    font-size: large;
+    font-weight: initial;
+}
+
+#tbl-schenkung tr:nth-child(2) td, #tbl-schenkung tr:last-child td{
+    border: 2px solid #f7786b;
+    text-align: center;
+    font-size: large;
+}
+
+#tbl-schenkung tr:nth-child(3) td{
+    width: 35%;
+    border: 2px dashed #92a8d1;
+    vertical-align: top;
+}
+
+#tbl-schenkung tr:nth-child(3) td:last-child{
+    width: 20%;
+    border: 2px dotted #A9A9A9;
+}
+
+#tbl-schenkung tr:nth-child(3) td > ol{
+    counter-reset: counter-schenkung;
+    list-style-type: none;
+}
+
+#tbl-schenkung tr:nth-child(3) td > ol > li{
+    counter-increment: counter-schenkung;
+}
+
+#tbl-schenkung tr:nth-child(3) td > ol > li::before{
+    content: counter(counter-schenkung, lower-alpha)") ";
+}
+
+#tbl_leihe tr th, #tbl_leihe2 tr th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl_leihe tr:nth-child(2) td:first-child, #tbl_leihe2 tr:nth-child(2) td:first-child{
+    border: 3px solid #f7786b;
+    font-weight: bold;
+}
+
+#tbl_leihe tr:nth-child(2) td:last-child, #tbl_leihe2 tr:nth-child(2) td:last-child{
+    border: 3px solid #92a8d1;
+    font-weight: bold;
+}
+
+#tbl_leihe tr:nth-child(3) td:first-child, #tbl_leihe2 tr:nth-child(3) td:first-child{
+    border: 3px solid #f7786b;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl_leihe tr:nth-child(3) td:last-child, #tbl_leihe2 tr:nth-child(3) td:last-child{
+    border: 3px solid #92a8d1;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-miete{
+    width: 50%;
+    table-layout: fixed;
+}
+
+#tbl-miete td{
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+}
+
+#tbl-miete tr:first-child td{
+    background-color: #92a8d1;
+}
+
+#tbl-miete tr:nth-child(2) td{
+    width: 10%;
+}
+
+#tbl-miete tr:nth-child(2) td:first-child{
+    background-color:#4b70b4;
+}
+
+#tbl-miete tr:nth-child(2) td:nth-child(2){
+    background-color: #6f8cc3;
+}
+
+#tbl-miete tr:nth-child(2) td:nth-child(3){
+    background-color: #92a8d1;
+}
+
+#tbl-miete tr:nth-child(2) td:last-child{
+    background-color:  #b7c6e1;
+}
+
+#tbl-miete2{
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#tbl-miete2 td{
+    width: 16%;
+}
+
+#tbl-miete2 tr:nth-child(even){
+    background-color: #92a8d1;
+}
+
+#tbl-miete2 tr:nth-child(odd){
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-miete2 tr:first-child{
+    background-color: #f7786b;
+    color: #000000;
+}
+
+#tbl-vermieter ul, #tbl-mieter ul{
+    text-align: left;
+}
+
+#tbl-vermieter th, #tbl-mieter th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-vermieter td, #tbl-mieter td{
+    vertical-align: top;
+}
+
+#tbl-vermieter ol, #tbl-vermieter ul, #tbl-mieter ol, #tbl-mieter ul{
+    text-align: left;
+}
+
+#tbl-vermieter tr:nth-child(2) td:first-child, #tbl-vermieter tr:nth-child(3) td:first-child, #tbl-mieter tr:nth-child(2) td:first-child, 
+#tbl-mieter tr:nth-child(3) td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-vermieter tr:nth-child(2) td:last-child, #tbl-vermieter tr:nth-child(3) td:last-child, #tbl-mieter tr:nth-child(2) td:last-child, 
+#tbl-mieter tr:nth-child(3) td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-vermieter tr:nth-child(4) td, #tbl-vermieter tr:last-child td, #tbl-mieter tr:nth-child(4) td, #tbl-mieter tr:last-child td{
+    background-color: #f7cac9;
+}
+
+#tbl-vermieter-tbl{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#tbl-vermieter-tbl tr:first-child td:first-child, #tbl-vermieter-tbl tr:nth-child(2) td:first-child, #tbl-vermieter-tbl tr:last-child td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-vermieter-tbl tr:first-child td:nth-child(2), #tbl-vermieter-tbl tr:nth-child(2) td:nth-child(2), #tbl-vermieter-tbl tr:last-child td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-vermieter-tbl tr:first-child td:last-child, #tbl-vermieter-tbl tr:nth-child(2) td:last-child, #tbl-vermieter-tbl tr:last-child td:last-child{
+    background-color: #acacac;
+}
+
+#tbl-ordentliche-beendigung-miete ul, #tbl-ordentliche-beendigung-miete ol{
+    text-align: left;
+}
+
+#tbl-ordentliche-beendigung-miete th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-ordentliche-beendigung-miete tr:nth-child(2) td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-ordentliche-beendigung-miete tr:nth-child(2) td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-ordentliche-beendigung-miete tr:last-child td:first-child{
+    border: 3px dashed #f7786b;
+}
+
+#tbl-ordentliche-beendigung-miete tr:last-child td:last-child{
+    border: 3px dashed #92a8d1;
+    vertical-align: top;
+}
+
+#tbl-unordentliche-beendigung-miete ul, #tbl-unordentliche-beendigung-miete ol{
+    text-align: left;
+}
+
+#tbl-unordentliche-beendigung-miete th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-unordentliche-beendigung-miete td{
+    vertical-align: top;
+}
+
+#tbl-unordentliche-beendigung-miete tr:nth-child(2) td:first-child, #tbl-unordentliche-beendigung-miete tr:nth-child(3) td:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-unordentliche-beendigung-miete tr:nth-child(2) td:last-child, #tbl-unordentliche-beendigung-miete tr:nth-child(3) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-unordentliche-beendigung-miete tr:nth-child(4) td:last-child{
+    border: 4px dashed #f7786b;
+}
+
+#tbl-unordentliche-beendigung-miete tr:nth-child(4) td:first-child, #tbl-unordentliche-beendigung-miete tr:last-child td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-unordentliche-beendigung-miete tr:nth-child(4) td:nth-child(2), #tbl-unordentliche-beendigung-miete tr:last-child td:last-child{
+    background-color: #f7cac9;
+}
+
+#tbl-miete-wohnung{
+    table-layout: auto;
+}
+
+#tbl-miete-wohnung ul, #tbl-miete-wohnung ol{
+    text-align: left;
+}
+
+#tbl-miete-wohnung tr td:nth-child(2), #tbl-miete-wohnung tr td:last-child{
+    vertical-align: top;
+}
+
+#tbl-miete-wohnung tr td:first-child{
+    width: 20%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#tbl-miete-wohnung th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-miete-wohnung tr:nth-child(3) td:last-child, #tbl-miete-wohnung tr:nth-child(4) td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-miete-wohnung tr:nth-child(2) td:first-child, #tbl-miete-wohnung tr:last-child td:first-child, #tbl-miete-wohnung tr:nth-child(3) td:first-child, 
+#tbl-miete-wohnung tr:nth-child(4) td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-miete-wohnung tr:nth-child(2) td:nth-child(2), #tbl-miete-wohnung tr:last-child td:nth-child(2){
+    width: 35%;
+    background-color: #92a8d1;
+}
+
+#tbl-miete-wohnung tr:nth-child(2) td:last-child, #tbl-miete-wohnung tr:last-child td:last-child{
+    background-color: #f7cac9;
+}
+
+#tbl-darlehen tr:first-child th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-darlehen tr:nth-child(2) td:first-child{
+    background-color: #92a8d1;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#tbl-darlehen tr:nth-child(2) td:last-child{
+    background-color: #f7786b;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#tbl-darlehen tr:last-child td:first-child{
+    border: 3px solid #92a8d1;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-darlehen tr:last-child td:last-child{
+    border: 3px solid #f7786b;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-darlehen2 td:first-child, #tbl-darlehen3 td:first-child{
+    vertical-align: top;
+    text-align: left;
+    border: 3px dashed #034f84;
+}
+
+#tbl-darlehen2 td:first-child ul ol ul, #tbl-darlehen2 td:last-child ul ul, #tbl-darlehen3 td ul ol ul{
+    list-style-type: none;
+}
+
+#tbl-darlehen2 td:first-child ul ol ul li::before, #tbl-darlehen2 td:last-child ul ul li::before, #tbl-darlehen3 td ul ol ul li::before{
+    content: '-';
+    padding-right: 5px;
+}
+
+#tbl-darlehen2 td:last-child, #tbl-darlehen3 td:last-child{
+    border: 3px dashed #f7786b;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-leasing td:nth-child(1){
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-leasing td:nth-child(3){
+    background-color: #f7786b;
+}
+
+#tbl-leasing td:nth-child(5){
+    background-color: #92a8d1;
+}
+
+#tbl-leasing2 tr th:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-leasing2 tr th:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-leasing2 tr td:first-child{
+    border: 3px solid #034f84;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-leasing2 tr td:last-child{
+    border: 3px solid #f7786b;
+    vertical-align: top;
+    text-align: left;
+}
+
+#tbl-auftrag tr:first-child th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-auftrag tr:nth-child(2) td:nth-child(1){
+    font-size: larger;
+    font-weight: bold;
+    background-color: #92a8d1;
+}
+
+#tbl-auftrag tr:nth-child(2) td:nth-child(2){
+    font-size: larger;
+    font-weight: bold;
+    background-color: #f7786b;
+}
+
+#tbl-auftrag tr:nth-child(3) td:nth-child(1){
+    vertical-align: top;
+    text-align: left;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-auftrag tr:nth-child(3) td:nth-child(2){
+    vertical-align: top;
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+
+#tbl-dienstvertrag tr td:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-dienstvertrag tr td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-makler td{
+    background-color: #034f84;
+    color: #fff;
+    font-size: large;
+}
+
+#tbl-makler tr:nth-child(4) td{
+    background-color: #f7786b;
+    color: #000;
+}
+
+#tbl-makler table{
+    width: 100%;
+}
+
+#tbl-makler table td:first-child{
+    width: 50%;
+    font-size: initial;
+    font-weight: initial;
+    border: none;
+    background-color: #92a8d1;
+}
+
+#tbl-makler table td:last-child{
+    width: 50%;
+    font-size: initial;
+    font-weight: initial;
+    border: none;
+    background-color: #f7cac9;
+}
+
+#tbl-verschuldenshaftung{
+    width: 60%;
+}
+
+#tbl-verschuldenshaftung tr td:first-child{
+    width: 17%;
+}
+
+#tbl-verschuldenshaftung tr:first-child td, #tbl-verschuldenshaftung tr:nth-child(2) td, #tbl-verschuldenshaftung tr:nth-child(3) td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-verschuldenshaftung tr:nth-child(4) td{
+    background-color: #f7786b;
+}
+
+#tbl-verschuldenshaftung tr:nth-child(5) td{
+    background-color: #92a8d1;
+}
+
+#tbl-verschuldenshaftung tr:nth-child(6) td, #tbl-verschuldenshaftung tr:nth-child(7) td{
+    background-color: #f7cac9;
+}
+
+#tbl-verschuldenshaftung tr:last-child td:last-child{
+    border: 3px solid #034f84;
+}
+
+#tbl-elemente-823I-hr-verschulden{
+    width: 60%;
+}
+
+#tbl-elemente-823I-hr-verschulden th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-elemente-823I-hr-verschulden tr:nth-child(2) td:first-child, #tbl-elemente-823I-hr-verschulden tr:nth-child(3) td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-elemente-823I-hr-verschulden tr:nth-child(2) td:last-child, #tbl-elemente-823I-hr-verschulden tr:nth-child(3) td:last-child, 
+#tbl-elemente-823I-hr-verschulden tr:last-child td{
+    background-color: #92a8d1;
+}
+
+#tbl-elemente-823I-hr-verschulden tr:last-child td{
+    text-align: left;
+}
+
+#tbl-sittenwidrige-schädigung-hr{
+    width: 60%;
+}
+
+#tbl-sittenwidrige-schädigung-hr ul, #tbl-sittenwidrige-schädigung-hr ol{
+    text-align: left;
+}
+
+#tbl-sittenwidrige-schädigung-hr tr td:first-child{
+    width: 15%;
+}
+
+#tbl-sittenwidrige-schädigung-hr tr:first-child td, #tbl-sittenwidrige-schädigung-hr tr:nth-child(2) td, #tbl-sittenwidrige-schädigung-hr tr:nth-child(3) td{
+    background-color: #f7786b;
+}
+
+#tbl-sittenwidrige-schädigung-hr tr:nth-child(4) td{
+    background-color: #92a8d1;
+}
+
+#tbl-sittenwidrige-schädigung-hr tr:last-child td:last-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-haftung-dritter-hr, #tbl-haftung-dritter-hr2{
+    width: 60%;
+}
+
+#tbl-haftung-dritter-hr ul{
+    text-align: left;
+}
+
+#tbl-haftung-dritter-hr tr:first-child td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-haftung-dritter-hr tr:nth-child(2) td, #tbl-haftung-dritter-hr tr:nth-child(3) td{
+    background-color: #f7786b;
+}
+
+#tbl-haftung-dritter-hr tr:nth-child(4) td, #tbl-haftung-dritter-hr tr:nth-child(5) td{
+    background-color: #92a8d1;
+}
+
+#tbl-haftung-dritter-hr tr:nth-child(6) td, #tbl-haftung-dritter-hr tr:last-child td{
+    background-color: #f7cac9;
+}
+
+#tbl-haftung-dritter-hr2 ul{
+    text-align: left;
+}
+
+#tbl-haftung-dritter-hr2 tr:first-child td, #tbl-haftung-dritter-hr2 tr:nth-child(2) td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-haftung-dritter-hr2 tr:nth-child(3) td{
+    background-color: #f7786b;
+}
+
+#tbl-haftung-dritter-hr2 tr:nth-child(4) td, #tbl-haftung-dritter-hr2 tr:last-child td{
+    background-color: #92a8d1;
+}
+
+#tbl-haftung-tiere-hr{
+    width: 60%;
+}
+
+#tbl-haftung-tiere-hr tr:first-child td, #tbl-haftung-tiere-hr tr:nth-child(2) td, #tbl-haftung-tiere-hr tr:nth-child(3) td, #tbl-haftung-tiere-hr tr:nth-child(4) td,
+#tbl-haftung-tiere-hr tr:nth-child(5) td, #tbl-haftung-tiere-hr tr:last-child td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-haftung-tiere-hr tr:nth-child(6) td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-haftung-tiere-hr tr:nth-child(6) td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-unabhängige-haftung{
+    width: 40%;
+}
+
+#tbl-unabhängige-haftung tr td:first-child{
+    text-align: left;
+}
+
+#tbl-unabhängige-haftung tr td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-allgemeines-schadensrecht{
+    table-layout: auto;
+}
+
+#tbl-allgemeines-schadensrecht tr th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-allgemeines-schadensrecht tr:nth-child(2) td:first-child, #tbl-allgemeines-schadensrecht tr:nth-child(3) td:first-child{
+    width: 50%;
+    background-color: #92a8d1;
+}
+
+#tbl-allgemeines-schadensrecht tr:nth-child(2) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-allgemeines-schadensrecht tr:nth-child(3) td:nth-child(2), #tbl-allgemeines-schadensrecht tr:nth-child(3) td:last-child{
+    width: 25%;
+    background-color: #f7cac9;
+}
+
+#tbl-allgemeines-schadensrecht tr:last-child td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-strukturfragen-br1, #tbl-strukturfragen-br2{
+    width: 60%;
+}
+
+#tbl-strukturfragen-br1 tr td:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-strukturfragen-br1 tr:first-child td:nth-child(2){
+    background: linear-gradient(to right, #034f84, #f7786b);
+    color: #fff;
+}
+
+#tbl-strukturfragen-br1 tr:first-child td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-strukturfragen-br2 tr td:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-strukturfragen-br2 tr:first-child td:nth-child(2){
+    border: 3px dashed #acacac;
+}
+
+#tbl-strukturfragen-br2 tr:nth-child(2) td:nth-child(2){
+    background: linear-gradient(to right, #034f84, #f7786b);
+    color: #fff;
+}
+
+#tbl-strukturfragen-br2 tr:first-child td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-leistungskondiktion tr td table td{
+    height: 150px;
+}
+
+#tbl-leistungskondiktion tr td{
+    background-color: #92a8d1;
+    border: 3px solid #034f84;
+}
+
+#tbl-leistungskondiktion tr td:first-child table tr:nth-child(1) td, #tbl-leistungskondiktion tr td:nth-child(2) table tr:nth-child(1) td,
+#tbl-leistungskondiktion tr td:nth-child(3) table tr:nth-child(1) td, #tbl-leistungskondiktion tr td:last-child table tr:nth-child(1) td{
+    border: none;
+    font-size: xx-large;
+}
+
+#tbl-leistungskondiktion tr td:first-child table tr:nth-child(2) td, #tbl-leistungskondiktion tr td:nth-child(2) table tr:nth-child(2) td
+, #tbl-leistungskondiktion tr td:nth-child(3) table tr:nth-child(2) td, #tbl-leistungskondiktion tr td:nth-child(4) table tr:nth-child(2) td{
+    border: none;
+    background-color: #034f84;
+    color: #fff;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#tbl-leistungskondiktion tr td:nth-child(2) table tr:nth-child(3) td, #tbl-leistungskondiktion tr td:nth-child(3) table tr:nth-child(3) td
+, #tbl-leistungskondiktion tr td:nth-child(4) table tr:nth-child(3) td{
+    border: none;
+}
+
+#tbl-leistungskondiktion tr td:first-child table tr:nth-child(4) td, #tbl-leistungskondiktion tr td:nth-child(2) table tr:nth-child(4) td
+, #tbl-leistungskondiktion tr td:nth-child(3) table tr:nth-child(4) td, #tbl-leistungskondiktion tr td:nth-child(4) table tr:nth-child(4) td{
+    border: none;
+    background-color: #f7786b;
+    color: #fff;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#tbl-nichtleistungskondiktion th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-nichtleistungskondiktion tr:nth-child(2) td:first-child{
+    background-color: #92a8d1;
+}
+
+#tbl-nichtleistungskondiktion tr:nth-child(2) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-nichtleistungskondiktion tr:last-child td:first-child, #tbl-nichtleistungskondiktion tr:last-child td:nth-child(2){
+    background-color: #92a8d1;
+    width: fit-content;
+}
+
+
+#tbl-anspruchinhalt tr:first-child td{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-anspruchinhalt tr:nth-child(2) td, #tbl-anspruchinhalt tr:last-child td:first-child{
+    background-color: #f7786b;
+}
+
+#tbl-anspruchinhalt tr:nth-child(2) td:last-child, #tbl-anspruchinhalt tr:last-child td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-leistungskette, #tbl-leistungskette2{
+    width: 620px;
+}
+
+#tbl-leistungskette td, #tbl-leistungskette2 td{
+    height: 100px;
+    width: 100px;
+}
+
+#tbl-leistungskette tr:first-child td:first-child, #tbl-leistungskette2 tr:first-child td:first-child{
+    background-color: #f7786b;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#tbl-leistungskette tr:first-child td:last-child, #tbl-leistungskette2 tr:first-child td:last-child{
+    background-color: #034f84;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#tbl-leistungskette tr:last-child td:last-child, #tbl-leistungskette2 tr:last-child td:last-child{
+    background-color: #92a8d1;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#tbl-goa th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-goa tr:nth-child(2) td{
+    border: 3px solid #034f84;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#tbl-goa tr:nth-child(3) td:first-child, #tbl-goa tr:nth-child(4) td:first-child, #tbl-goa tr:nth-child(4) td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-goa tr:nth-child(3) td:last-child, #tbl-goa tr:nth-child(4) td:nth-child(3), #tbl-goa tr:nth-child(4) td:nth-child(4){
+    background-color: #f7786b;
+}
+
+#tbl-goa tr:nth-child(4) td{
+    font-weight: bold;
+}
+
+#tbl-goa tr:nth-child(5) td:first-child, #tbl-goa tr:nth-child(5) td:nth-child(2), #tbl-goa tr:nth-child(6) td:first-child, #tbl-goa tr:nth-child(6) td:nth-child(2){
+    border: 3px solid #92a8d1;
+}
+
+#tbl-goa tr:nth-child(5) td:last-child, #tbl-goa tr:nth-child(6) td:last-child{
+    border: 3px solid #f7786b;
+}
+
+#tbl-berechtigte-goa{
+    table-layout: auto;
+}
+
+#tbl-berechtigte-goa ul{
+    text-align: left;
+}
+
+#tbl-berechtigte-goa tr th{
+    color: #fff;
+    background: linear-gradient(to right, #034f84 0%, #f7786b 100%);
+}
+
+#tbl-berechtigte-goa tr:nth-child(2) td:first-child{
+    width: 35%;
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-berechtigte-goa tr:nth-child(2) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-berechtigte-goa tr:nth-child(3) td:first-child{
+    background-color: #92a8d1;
+}
+
+#tbl-berechtigte-goa tr:nth-child(3) td:nth-child(2){
+    width: 35%;
+    background-color: #f7cac9;
+}
+
+#tbl-berechtigte-goa tr:nth-child(3) td:nth-child(3), #tbl-berechtigte-goa tr:nth-child(3) td:last-child{
+    width: 10%;
+    background-color: #f7cac9;
+}
+
+#tbl-berechtigte-goa tr:nth-child(4) td:first-child{
+    border: 3px dashed #92a8d1;
+}
+
+#tbl-berechtigte-goa tr:nth-child(4) td:last-child{
+    border: 3px dashed #f7cac9;
+}
+
+
+/*Sachenrecht*/
+#tbl_sr tr:first-child th{
+    border: 3px solid #168AFF;
+    font-size: larger;
+}
+
+#tbl_sr tr:nth-child(2) td:first-child, #tbl_sr tr:nth-child(2) td:nth-child(3), #tbl_sr tr:nth-child(3) td:nth-child(1), #tbl_sr tr:nth-child(3) td:nth-child(2){
+    border: 3px solid #168AFF;
+}
+
+#tbl_sr tr:nth-child(2) td:nth-child(2), #tbl_sr tr:nth-child(3) td:nth-child(3), #tbl_sr tr:nth-child(4) td:nth-child(1), #tbl_sr tr:nth-child(4) td:nth-child(2), 
+#tbl_sr tr:nth-child(5) td:nth-child(2){
+    border: 3px solid #000000;
+}
+
+#tbl_sr tr:nth-child(3) td:last-child, #tbl_sr tr:nth-child(4) td:last-child, #tbl_sr tr:nth-child(5) td:first-child, #tbl_sr tr:nth-child(5) td:last-child{
+    border: none;
+}
+
+#img_abp{
+    max-width: 75%;
+    height: auto;
+}
+
+#tbl_sr1 tr:first-child td{
+    font-size: larger;
+}
+
+#tbl_sr1 tr:first-child td:first-child{
+    border: 3px dashed #168AFF;
+    font-weight: bolder;
+    width: 20%;
+}
+
+#tbl_sr1 tr:first-child td:nth-child(2){
+    border: 3px solid #168AFF;
+    font-weight: bolder;
+}
+
+#tbl_sr1 tr:first-child td:last-child{
+    border: 3px solid #168AFF;
+    font-weight: bolder;
+    width: 20%;
+}
+
+#tbl_sr1 tr:nth-child(2) td:first-child{
+    border: 3px solid #FF0000;
+}
+
+#tbl_sr1 tr:nth-child(2) td{
+    border: 3px solid #168AFF;
+}
+
+#tbl_sr1 tr:nth-child(2) td:nth-child(2){
+    width: 30%;
+}
+
+#tbl_sr1 tr:nth-child(2) td:last-child{
+    width: 10%;
+}
+
+#tbl_sr1 tr:nth-child(3) td{
+    border: 3px solid #168AFF;
+}
+
+#tbl_sr1 tr:nth-child(3) td:first-child{
+    width: 15%;
+}
+
+#tbl_sr1 tr:nth-child(4) td{
+    border: 3px solid #168AFF;
+}
+
+#tbl_sr1 tr:nth-child(5) td{
+    border: 3px solid #168AFF;
+}
+
+
+#tbl-mm-dh td{
+    text-align: center;
+    width: 30%;
+}
+
+#tbl-mm-dh tr:first-child td:first-child, #tbl-mm-dh tr:first-child td:last-child{
+    border: 3px dashed #168AFF;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#tbl-mm-dh tr:nth-child(2) td:first-child, #tbl-mm-dh tr:nth-child(2) td:last-child{
+    border: 2px solid #168AFF;
+}
+
+#tbl-mm-dh tr:nth-child(4) td:first-child, #tbl-mm-dh tr:nth-child(4) td:last-child{
+    border: 2px solid #168AFF;
+}
+
+#tbl-mm-dh tr:nth-child(3) td:nth-child(2){
+    border: 2px dashed #BABABA;
+}
+
+#tbl-mm-dh tr:last-child td:first-child{
+    text-align: left;
+    font-size: smaller;
+}
+
+#tbl-besitzschutz tr:first-child td{
+    background-color: #034f84;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+#tbl-besitzschutz tr:nth-child(2) td:first-child{
+    background-color: #92a8d1;
+    width: 45%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#tbl-besitzschutz tr:nth-child(2) td:last-child{
+    background-color: #f7786b;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#tbl-besitzschutz tr:nth-child(3) td{
+  border: 3px solid #f7786b;
+  font-weight: bold;
+}
+
+#tbl-besitzschutz tr:last-child td{
+    border: 3px dotted #f7786b;
+}
+
+#tbl-poss-schutz, #tbl-verb-eigm, #tbl-besitzwehr{
+    width: 60%;
+}
+
+#tbl-poss-schutz td, #tbl-besitzwehr td, #tbl-verb-eigm td{
+    border: 2px solid #168AFF;
+}
+
+#tbl-poss-schutz tr:last-child td:last-child{
+    border: 2px dashed #168AFF;
+}
+
+#tbl-verb-eigm tr:nth-child(4) td{
+    border: none;
+}
+
+#tbl-besitzwehr tr:nth-child(5) td{
+    border: none;
+}
+
+#tbl-petitorisch tr:first-child td{
+    background-color: #034f84;
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#tbl-petitorisch tr:nth-child(2) td{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#tbl-petitorisch tr:nth-child(2) td:nth-child(1){
+    background-color: #92a8d1;
+}
+
+#tbl-petitorisch tr:nth-child(2) td:nth-child(2){
+    background-color: #f7786b;
+}
+
+#tbl-petitorisch tr:nth-child(3) td:nth-child(1){
+    text-align: left;
+    border: 3px solid #92a8d1;
+}
+#tbl-petitorisch tr:nth-child(3) td:nth-child(2){
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+#tbl-petitorisch tr:nth-child(4) td:nth-child(1){
+    text-align: left;
+    border: 3px solid #92a8d1;
+}
+#tbl-petitorisch tr:nth-child(4) td:nth-child(2){
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+
+#tbl-petitorisch tr:nth-child(5) td:nth-child(1){
+    text-align: left;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-petitorisch tr:nth-child(5) td:nth-child(2){
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+
+#tbl-petitorisch tr:nth-child(6) td:nth-child(1){
+    text-align: left;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-petitorisch tr:nth-child(6) td:nth-child(2){
+    text-align: center;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-petitorisch tr:nth-child(6) td:nth-child(3){
+    text-align: center;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-petitorisch tr:nth-child(6) td:nth-child(4){
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+
+#tbl-petitorisch tr:nth-child(7) td:nth-child(2){
+    text-align: center;
+    border: 3px solid #f7786b;
+}
+
+#tbl-petitorisch tr:nth-child(7) td:nth-child(4){
+    text-align: center;
+    border: 3px solid #f7786b;
+}
+
+#tbl-uebersicht > tbody > tr > td:first-child {
+    width: 80%;
+    border: 3px solid #168aff;
+}
+
+#tbl-uebersicht > tbody > tr:nth-child(3) > td:nth-child(2) {
+    border: 3px solid #ff0000;
+    padding: 0;
+}
+
+#tbl-uebersicht2{
+    width: 100%;
+}
+
+#tbl-uebersicht2 td{
+    border: 3px solid #92a8d1;
+}
+
+#tbl-erwerb th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-erwerb td:nth-child(1){
+    background-color: #f7786b;
+}
+
+#tbl-erwerb td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb td:nth-child(3){
+    background-color: #f7cac9;
+}
+
+#tbl-erwerb2 tr:first-child td, #tbl-erwerb2 tr:last-child td, #tbl-erwerb2 tr:nth-child(2) td:first-child{
+    border: 3px solid #034f84;
+}
+
+#tbl-erwerb2 tr:nth-child(3) td{
+    border: 3px dashed #92a8d1;
+}
+
+#tbl-erwerb2 tr:nth-child(2) td:nth-child(2), #tbl-erwerb2 tr:nth-child(2) td:nth-child(3), #tbl-erwerb2 tr:nth-child(2) td:last-child{
+    border: 3px solid #f7786b;
+}
+
+#tbl-erwerb3 th:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-erwerb3{
+    margin-bottom: 40px;
+}
+
+#tbl-erwerb3 th:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb3 tr:nth-child(2) td:first-child{
+    vertical-align: top;
+    text-align: left;
+    border: 3px solid #034f84;
+}
+
+#tbl-erwerb3 tr:nth-child(2) td:last-child{
+    vertical-align: top;
+    text-align: left;
+    border: 3px solid #f7786b;
+}
+
+#tbl-erwerb3 tr:last-child td{
+    vertical-align: top;
+    border: 3px solid #92a8d1;
+}
+
+#tbl-erwerb4 th:first-child, #tbl-erwerb4 td:first-child{
+    background-color: #f7786b;
+    vertical-align: top;
+    text-align: left;
+    width: 66.66%;
+}
+
+#tbl-erwerb4 th:nth-child(2), #tbl-erwerb4 td:nth-child(2){
+    background-color: #92a8d1;
+    vertical-align: top;
+    text-align: left;
+    width: 33.33%;
+}
+
+#tbl-erwerb4 th:last-child, #tbl-erwerb4 td:last-child{
+    background-color: #f7cac9;
+    vertical-align: top;
+    text-align: left;
+    width: 33.33%;
+}
+
+#tbl-erwerb4 tr:first-child th{
+    text-align: center;
+}
+
+#tbl-erwerb5 td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb5 tr:first-child td:nth-child(2), #tbl-erwerb5 tr:last-child td:nth-child(3){
+    background-color: #f7786b;
+}
+
+#tbl-erwerb6{
+    width: 60%;
+}
+
+#tbl-erwerb6 tr:first-child td:last-child, #tbl-erwerb6 tr:nth-child(2) td, #tbl-erwerb6 tr:nth-child(3) td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb6 tr:last-child td{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb-vvv-übersicht{
+    width: 65%;
+    table-layout: auto;
+}
+
+#tbl-erwerb-vvv-übersicht tr:nth-child(2) td:nth-child(3), #tbl-erwerb-vvv-übersicht tr:nth-child(3) td, #tbl-erwerb-vvv-übersicht tr:nth-child(5) td{
+    font-size: xx-large;
+}
+
+#tbl-erwerb-vvv-übersicht tr:first-child td:first-child, #tbl-erwerb-vvv-übersicht tr:first-child td:nth-child(3), #tbl-erwerb-vvv-übersicht tr:first-child td:last-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-erwerb-vvv-übersicht tr:nth-child(2) td:first-child, #tbl-erwerb-vvv-übersicht tr:nth-child(2) td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb-vvv-übersicht tr:nth-child(4) td{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb-vvv-übersicht tr:last-child td{
+    background-color: #f7cac9;
+}
+
+#tbl-erwerb-vvv-übersicht tr td:first-child, #tbl-erwerb-vvv-übersicht tr:nth-child(2) td:nth-child(2), #tbl-erwerb-vvv-übersicht tr:nth-child(2) td:nth-child(3), 
+#tbl-erwerb-vvv-übersicht tr td:nth-child(4){
+    width: 15%;
+}
+
+#tbl-erwerb-vvv-übersicht tr:nth-child(2) td:nth-child(3){
+    width: 5%;
+}
+
+#tbl-erwerb-verbindung-grundstücke{
+    width: 60%;
+}
+
+#tbl-erwerb-verbindung-grundstücke tr:first-child td, #tbl-erwerb-verbindung-grundstücke tr:nth-child(2) td, #tbl-erwerb-verbindung-grundstücke tr:nth-child(3) td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb-verbindung-grundstücke tr:last-child td{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb-verbindung-sache{
+    width: 60%;
+}
+
+#tbl-erwerb-verbindung-sache tr:first-child td, #tbl-erwerb-verbindung-sache tr:nth-child(2) td, #tbl-erwerb-verbindung-sache tr:nth-child(3) td,
+#tbl-erwerb-verbindung-sache tr:nth-child(4) td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb-verbindung-sache tr:last-child td{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb-schuldurkunden{
+    width: 60%;
+}
+
+#tbl-erwerb-schuldurkunden td{
+    vertical-align: top;
+}
+
+#tbl-erwerb-schuldurkunden ul{
+    text-align: left;
+}
+
+#tbl-erwerb-schuldurkunden th:first-child{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-erwerb-schuldurkunden th:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-erwerb-schuldurkunden tr:last-child td:first-child{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerb-schuldurkunden tr:last-child td:last-child{
+    background-color: #f7cac9;
+}
+
+#tbl-erwerbB{
+    width: 60%;
+}
+
+#tbl-erwerbB tr:first-child td, #tbl-erwerbB tr:nth-child(2) td, #tbl-erwerbB tr:nth-child(3) td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerbB tr:last-child td{
+    background-color: #f7786b;
+}
+
+#tbl-erwerbA{
+    width: 60%;
+}
+
+#tbl-erwerbA tr:first-child td, #tbl-erwerbA tr:nth-child(2) td, #tbl-erwerbA tr:nth-child(3) td, #tbl-erwerbA tr:nth-child(4) td, #tbl-erwerbA tr:nth-child(5) td{
+    background-color: #92a8d1;
+}
+
+#tbl-erwerbA tr:last-child td{
+    background-color: #f7786b;
+}
+
+#tbl-ebv-985{
+    width: 60%;
+}
+
+#tbl-ebv-985 ol, #tbl-ebv-985 ul{
+    text-align: left;
+}
+
+#tbl-ebv-985 tr td:last-child{
+    vertical-align: top;
+}
+
+#tbl-ebv-985 tr td:first-child{
+    width: 15%;
+    font-size: larger;
+    font-weight: bold;
+    border: 3px solid #034f84;
+}
+
+#tbl-ebv-985 tr:first-child td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-ebv-985 tr:last-child td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-ebv-privilegierung{
+    table-layout: auto;
+}
+
+#tbl-ebv-privilegierung tr td:nth-child(2), #tbl-ebv-privilegierung tr td:last-child{
+    width: 35%;
+}
+
+#tbl-ebv-privilegierung th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-ebv-privilegierung tr:nth-child(2) td:nth-child(2), #tbl-ebv-privilegierung tr:nth-child(2) td:last-child{
+    border: 4px solid #034f84;
+}
+
+#tbl-ebv-privilegierung tr:nth-child(3) td:last-child{
+    background-color: #92a8d1;
+}
+
+#tbl-ebv-privilegierung tr:nth-child(4) td:nth-child(2), #tbl-ebv-privilegierung tr:nth-child(4) td:last-child, #tbl-ebv-privilegierung tr:nth-child(5) td:nth-child(2), 
+#tbl-ebv-privilegierung tr:nth-child(5) td:last-child{
+    border: 4px solid #92a8d1;
+}
+
+#tbl-ebv-privilegierung span{
+    margin-top: -10px;
+    margin-left: 15px;
+    font-size: xx-large;
+    display: inline-block;
+    transform: scale(2);
+}
+
+#tbl-ebv-privilegierung tr:nth-child(5) td:first-child{
+    width: 20%;
+    border: 4px solid #FF0000;
+}
+
+#tbl-ebv-privilegierung tr:nth-child(6) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-ebv-privilegierung tr:nth-child(7) td:nth-child(2), #tbl-ebv-privilegierung tr:nth-child(7) td:last-child, #tbl-ebv-privilegierung tr:nth-child(8) td:nth-child(2),
+#tbl-ebv-privilegierung tr:nth-child(8) td:last-child{
+    border: 4px solid #f7786b;
+}
+
+#tbl-ebv-privilegierung tr:last-child td:nth-child(2), #tbl-ebv-privilegierung tr:last-child td:last-child{
+    border: 4px dashed #f7786b;
+}
+
+#tbl-ebv-verschärfte-haftung{
+    width: 60%;
+}
+
+#tbl-ebv-verschärfte-haftung ul{
+    text-align: left;
+}
+
+#tbl-ebv-verschärfte-haftung th, #tbl-ebv-verschärfte-haftung tr:nth-child(2) td{
+    background-color: #f7786b;
+}
+
+#tbl-ebv-verschärfte-haftung tr:nth-child(3) td, #tbl-ebv-verschärfte-haftung tr:nth-child(4) td, #tbl-ebv-verschärfte-haftung tr:last-child td{
+    border: 4px solid #f7786b;
+}
+
+#tbl-beseitigung-1004{
+    width: 60%;
+}
+
+#tbl-beseitigung-1004 td{
+    vertical-align: top;
+}
+
+#tbl-beseitigung-1004 ul, #tbl-beseitigung-1004 ol{
+    text-align: left;
+}
+
+#tbl-beseitigung-1004 th{
+    background-color: #034f84;
+    color: #fff;
+}
+
+#tbl-beseitigung-1004 tr td{
+    background-color: #92a8d1;
+}
+
+#tbl-beseitigung-1004 tr:last-child td{
+    background-color: #f7786b;
+}
+
+#btn-go-back-derelinquiert{
+    width: fit-content;
+    background-color: #034f84;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#tbl-derelinquiert{
+    width: 40%;
+}
+
+#tbl-derelinquiert tr td:first-child{
+    width: 15%;
+}
+
+#tbl-derelinquiert tr:nth-child(2) td:nth-child(2), #tbl-derelinquiert tr:nth-child(3) td:nth-child(2), #tbl-derelinquiert tr:nth-child(4) td:nth-child(2){
+    background-color: #92a8d1;
+}
+
+#tbl-derelinquiert tr:nth-child(6) td:nth-child(2){
+    background-color: #f7786b;
+}
