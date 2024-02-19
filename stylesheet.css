@@ -11,10 +11,6 @@ body{
     background-color: #87CEFA;
 }
 
-.bodyoe{
-    background-color: #D3D3D3;
-}
-
 .comingsoon{
     text-align: center;
     font-size: 50px;
@@ -27,17 +23,22 @@ h2, h1{
     margin-bottom: 20px;
 }
 
-.h2-top{
-    margin-top: 20px;
-}
-
 h3{
     margin-top: 40px;
     text-decoration: underline;
+    width: fit-content;
 }
 
 h4{
     margin-top: 40px;
+}
+
+.h2-top{
+    margin-top: 20px;
+}
+
+a{
+    color: #0000FF;
 }
 
 .topBtn {
@@ -86,6 +87,14 @@ table td{
     padding: 8px;
     border-radius: 5px;
 }
+
+.track-back-anchor{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    width: auto;
+}
+
 
 /*Liststyles*/
 .ul-arrowhead{
@@ -477,65 +486,6 @@ footer{
 }
 
 
-/*Staatsorga*/
-.bodystaat{
-    background-color: #D3D3D3;
-}
-
-#button14{
-    background-color: #FFC0CB;
-    margin-top: 5px;
-}
-
-#button15{
-    background-color: #87CEEB;
-}
-
-#button16{
-    background-color: #FFCC99;
-}
-.fett{
-    font-size: 24px;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-
-/*Organstreit*/
-
-.linkos{
-    color: #0000FF;
-    text-decoration: none;
-    transition: 0.35s linear;
-}
-
-.linkos:hover{
-    text-decoration: underline;
-    color: #8A2BE2;
-    font-size: 23px;
-    transition: 0.35s linear;
-}
-
-
-/*Verwaltungsrecht*/
-.div_r1c1{
-    width: 20%;
-    float: left;
-    background-color: #008000;
-}
-
-.div_r1c2{
-    width: 20%;
-    background-color: #008000;
-}
-
-.div_r1c3{
-    width: 20%;
-    float: right;
-    background-color: #008000;
-}
-
-
 /*Datenschutzerklärung*/
 #language-slider {
     display: flex;
@@ -599,6 +549,18 @@ footer{
     margin-bottom: 40px;
 }
 
+.headspace{
+    margin-top: 50px;
+}
+
+.no-headspace{
+    margin-top: 0;
+}
+
+.no-feetspace{
+    margin-bottom: 0;
+}
+
 
 /*Textstyles*/
 .right{
@@ -629,6 +591,10 @@ footer{
     text-decoration: underline;
 }
 
+.txt-dec-none{
+    text-decoration: none;
+}
+
 .italic{
     font-style: italic;
 }
@@ -647,6 +613,10 @@ footer{
 
 .xx-large{
     font-size: xx-large;
+}
+
+.xxx-large{
+    font-size: 4em;
 }
 
 .smaller{
@@ -670,6 +640,9 @@ footer{
     text-align: left;
 }
 
+.vertical-txt{
+    writing-mode: vertical-lr;
+}
 
 /*Colors*/
 
@@ -678,10 +651,14 @@ footer{
 }
 
 .red{
-    color: #FF0000;
+    color: #ff0000;
 }
 
-.linkgii, .external-link{
+.crimson-red{
+    color: #DC143C;
+}
+
+.blue{
     color: #0000FF;
 }
 
@@ -689,12 +666,28 @@ footer{
     color: #ff8c00;
 }
 
-.crimson-red{
-    color: #DC143C;
-}
-
 .snorkel-blue{
     color: #034f84;
+}
+
+.txt-color-alto{
+    color: #dcdcdc;
+}
+
+.txt-color-bali-hai{
+    color: #839faa;
+}
+
+.txt-color-solid-pink{
+    color: #943c4c;
+}
+
+.txt-color-copper{
+    color: #ae6b38;
+}
+
+.txt-color-dune{
+    color: #3b3734;
 }
 
 

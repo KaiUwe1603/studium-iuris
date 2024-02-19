@@ -1,0 +1,270 @@
+/*Global*/
+.bodyÖR{
+    background-color: #dcdcdc;
+}
+
+/*Color Palette
+#dcdcdc (light-shade)
+#839faa (light-accent)
+#943c4c (main)
+#ae6b38 (dark-accent)
+#3b3734 (dark-shade)
+*/
+
+
+/*Staatsorga*/
+#button14{
+    background-color: #FFC0CB;
+    margin-top: 5px;
+}
+
+#button15{
+    background-color: #87CEEB;
+}
+
+#button16{
+    background-color: #FFCC99;
+}
+.fett{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/*Organstreit*/
+
+.linkos{
+    color: #0000FF;
+    text-decoration: none;
+    transition: 0.35s linear;
+}
+
+.linkos:hover{
+    text-decoration: underline;
+    color: #8A2BE2;
+    font-size: 23px;
+    transition: 0.35s linear;
+}
+
+
+/*Allg. Verwaltungsrecht*/
+#tbl-übersicht th{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-übersicht tr:nth-child(2) td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-übersicht tr:nth-child(2) td:nth-child(2), #tbl-übersicht tr:last-child td{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-übersicht tr:nth-child(2) td:last-child{
+    background-color: #ae6b38;
+}
+
+#tbl-ermächtigungsgrundlage th{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-ermächtigungsgrundlage tr:nth-child(2) td{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-ermächtigungsgrundlage tr:nth-child(3) td:first-child, #tbl-ermächtigungsgrundlage tr:nth-child(4) td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-ermächtigungsgrundlage tr:nth-child(3) td:last-child, #tbl-ermächtigungsgrundlage tr:nth-child(4) td:last-child{
+    background-color: #ae6b38;
+}
+
+#tbl-ermächtigungsgrundlage tr:last-child td:first-child{
+    border: 4px solid #839faa;
+}
+
+#tbl-ermächtigungsgrundlage tr:last-child td:last-child{
+    border: 4px solid #ae6b38;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen th{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen tr:nth-child(2) td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen tr:nth-child(2) td:last-child{
+    background-color: #ae6b38;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen tr:nth-child(3) td:first-child{
+    border: 4px solid #839faa;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen tr:nth-child(3) td:nth-child(3), #tbl-unbestimmte-rechtsbegriffe-ermessen tr:nth-child(3) td:last-child{
+    border: 4px solid #ae6b38;
+}
+
+#tbl-unbestimmte-rechtsbegriffe-ermessen tr:last-child td:nth-child(4), #tbl-unbestimmte-rechtsbegriffe-ermessen tr:last-child td:last-child{
+    border: 4px dashed #ae6b38;
+}
+
+#tbl-prüfungsschema-va ol{
+    text-align: left;
+}
+
+#tbl-prüfungsschema-va th{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-prüfungsschema-va td{
+    vertical-align: top;
+}
+
+#tbl-prüfungsschema-va tr:nth-child(2) td:first-child, #tbl-prüfungsschema-va tr:last-child td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-prüfungsschema-va tr:nth-child(2) td:last-child, #tbl-prüfungsschema-va tr:last-child td:last-child{
+    background-color: #ae6b38;
+}
+
+#tbl-abgrenzung-öffR-privR-VA ul{
+    padding-left: 0;
+}
+
+#tbl-abgrenzung-öffR-privR-VA td{
+    color: #dcdcdc;
+}
+
+#tbl-abgrenzung-öffR-privR-VA tr:first-child td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-abgrenzung-öffR-privR-VA tr:first-child td:nth-child(2){
+    background-color: #943c4c;
+}
+
+#tbl-abgrenzung-öffR-privR-VA tr:first-child td:nth-child(3){
+    background-color: #ae6b38;
+}
+
+#tbl-abgrenzung-öffR-privR-VA tr:last-child td{
+    background-color: #3b3734; 
+}
+
+#tbl-egl-hausverweis-behörde ul{
+    text-align: left;
+}
+
+#tbl-egl-hausverweis-behörde tr:first-child td:first-child{
+    background-color: #839faa;
+}
+
+#tbl-egl-hausverweis-behörde tr:first-child td:last-child{
+    background-color: #ae6b38;
+}
+
+#tbl-egl-hausverweis-behörde tr:last-child td{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:first-child td:first-child{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:first-child td:last-child{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:nth-child(2) td:first-child, #tbl-folgen-fehlerhafte-VA tr:last-child td:last-child{
+    border: 4px solid #3b3734;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:nth-child(2) td:nth-child(2){
+    background-color: #ae6b38;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:nth-child(2) td:last-child{
+    background-color: #839faa;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:last-child td:nth-child(2){
+    border: 4px solid #ae6b38;
+}
+
+#tbl-folgen-fehlerhafte-VA tr:last-child td:nth-child(3){
+    border: 4px solid #839faa;
+}
+
+#tbl-folgen-fehlerhafte-VA2 ul, #tbl-folgen-fehlerhafte-VA3 ul{
+    text-align: left;
+}
+
+#tbl-folgen-fehlerhafte-VA2 tr:first-child th:first-child, #tbl-folgen-fehlerhafte-VA2 tr:last-child td:first-child{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA2 tr:first-child th:last-child, #tbl-folgen-fehlerhafte-VA2 tr:last-child td:last-child{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA2 tr:nth-child(2) td:first-child{
+    border: 4px solid #943c4c;
+}
+
+#tbl-folgen-fehlerhafte-VA2 tr:nth-child(2) td:last-child{
+    border: 3px solid #3b3734;
+}
+
+#tbl-folgen-fehlerhafte-VA3 td{
+    vertical-align: top;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:first-child th:first-child, #tbl-folgen-fehlerhafte-VA3 tr:last-child td:first-child{
+    background-color: #ae6b38;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:first-child th:nth-child(2), #tbl-folgen-fehlerhafte-VA3 tr:last-child td:nth-child(2){
+    background-color: #839faa;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:first-child th:last-child, #tbl-folgen-fehlerhafte-VA3 tr:last-child td:last-child{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:last-child td{
+    vertical-align: middle;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:nth-child(2) td:first-child{
+    border: 4px solid #ae6b38;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:nth-child(2) td:nth-child(2){
+    border: 4px solid #839faa;
+}
+
+#tbl-folgen-fehlerhafte-VA3 tr:nth-child(2) td:last-child{
+    border: 4px solid #3b3734;
+}
+
+#tbl-aufhebung-VA{
+    width: 50%;
+}
