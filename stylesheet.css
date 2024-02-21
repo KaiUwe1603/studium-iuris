@@ -640,8 +640,12 @@ footer{
     text-align: left;
 }
 
-.vertical-txt{
+.vertical-txt-lr{
     writing-mode: vertical-lr;
+}
+
+.vertical-txt-rl{
+    writing-mode: vertical-rl;
 }
 
 /*Colors*/
