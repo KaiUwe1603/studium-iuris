@@ -25,6 +25,7 @@
 #button16{
     background-color: #FFCC99;
 }
+
 .fett{
     font-size: 24px;
     text-decoration: underline;
@@ -359,4 +360,25 @@ color: #dcdcdc;
 
 #tbl-nebenbestimmungen-VA tr:first-child th:first-child, #tbl-nebenbestimmungen-VA tr:last-child td:first-child{
     background-color: #ae6b38;
+}
+
+#tbl-übersicht-01 th{
+    background-color: #3b3734;
+    color: #dcdcdc;
+}
+
+#tbl-übersicht-01 tr:nth-child(2) td:first-child, #tbl-übersicht-01 tr:nth-child(2) td:nth-child(3), 
+#tbl-übersicht-01 tr:nth-child(2) td:nth-child(4){
+    background-color: #839faa;
+}
+
+#tbl-übersicht-01 tr:nth-child(2) td:nth-child(2), #tbl-übersicht-01 tr:nth-child(3) td{
+    background-color: #943c4c;
+    color: #dcdcdc;
+}
+
+#tbl-übersicht-01 tr:last-child td{
+    border: 4px solid #943c4c;
+    text-align: left;
+    vertical-align: top;
 }

@@ -279,6 +279,7 @@ header{
     padding: 0px;
     left: 0;
     display: none;
+    z-index: 1000;
 }
 
 .nav > li:nth-child(2) > ul li {
@@ -299,6 +300,12 @@ header{
     margin-top: 3px;
 }
 
+.nav > li:nth-child(5) > ul li{
+    background-color: #034f84;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
 /*--- Hide Sub Sublists ---*/
 .nav li:hover ul ul {
     display:none;
@@ -313,6 +320,7 @@ header{
     margin-left: 200px; 
     margin-top: -43px; 
     display: block;
+    z-index: 1000;
 }
 
 .activeH{
@@ -445,17 +453,17 @@ footer{
 }
 
 .height_2{
-    height: 50%;
-    margin-bottom: 50px;
+    height:46%;
+    margin-bottom: 30px;
 }
 
 .height_3{
-    height: 30%;
-    margin-bottom: 40px;
+    height: 29.5%;
+    margin-bottom: 30px;
 }
 
 .height_4{
-    height: 25%;
+    height: 20.5%;
     margin-bottom: 30px;
 }
 
