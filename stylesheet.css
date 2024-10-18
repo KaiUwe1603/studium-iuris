@@ -579,6 +579,10 @@ footer{
     padding: 10px;
 }
 
+.cozy{
+    padding: 0;
+}
+
 .blackborder{
     border: 3px solid #000000;
     border-radius: 5px;
@@ -697,6 +701,10 @@ footer{
 
 .orange{
     color: #ff8c00;
+}
+
+.black{
+    color: #000000;
 }
 
 .snorkel-blue{
