@@ -571,6 +571,24 @@ footer{
     margin-bottom: 0;
 }
 
+.tug-in{
+    padding: 2px;
+}
+
+.too-cozy{
+    padding: 10px;
+}
+
+.blackborder{
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.redborder{
+    border: 3px solid #ff0000;
+    border-radius: 5px;
+}
+
 
 /*Textstyles*/
 .right{
@@ -640,6 +658,7 @@ footer{
 .text-dec-none{
     text-decoration: none;
 }
+
 
 /*Text formatting*/
 .line-indent{
