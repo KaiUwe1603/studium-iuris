@@ -95,6 +95,14 @@ table td{
     width: auto;
 }
 
+.expanded{
+    grid-column: span2;
+}
+
+.shrink{
+    grid-column: span1;
+}
+
 
 /*Liststyles*/
 .ul-arrowhead{
