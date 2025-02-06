@@ -390,6 +390,10 @@ color: #dcdcdc;
     gap: 10px;
 }
 
+#tbl-aufbau tr:nth-child(3) td, #tbl-aufbau tr:nth-child(5) td{
+    vertical-align: top;
+} 
+
 #tbl-aufbau tr td:first-child{
     background-color: #943c4c;
 }
