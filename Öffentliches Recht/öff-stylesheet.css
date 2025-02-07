@@ -388,6 +388,11 @@ color: #dcdcdc;
     width: 100%;
 }
 
+#tbl-aufbau tr:first-child td{
+    font-size: large;
+    font-weight: bold;
+}
+
 #tbl-aufbau tr:nth-child(3) td, #tbl-aufbau tr:nth-child(5) td{
     vertical-align: top;
     text-align: left;
@@ -414,4 +419,5 @@ color: #dcdcdc;
 #tbl-aufbau tr:nth-child(2) td, #tbl-aufbau tr:nth-child(4) td{
     background-color: initial;
     border: 3px solid #000000;
+    color: #000000;
 }
