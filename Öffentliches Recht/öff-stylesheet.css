@@ -385,9 +385,6 @@ color: #dcdcdc;
 
 
 #tbl-aufbau{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
     width: 100%;
 }
 
@@ -398,6 +395,7 @@ color: #dcdcdc;
 
 #tbl-aufbau tr td:first-child{
     background-color: #943c4c;
+    color: #ffffff;
 }
 
 #tbl-aufbau tr td:nth-child(2){
@@ -406,16 +404,14 @@ color: #dcdcdc;
 
 #tbl-aufbau tr td:nth-child(3){
     background-color: #3b3734;
+    color: #ffffff;
 }
 
 #tbl-aufbau tr td:nth-child(4){
     background-color: #839faa;
 }
 
-#tbl-aufbau tr td:last-child{
-    border: 3px solid #dcdcdc;
-}
-
 #tbl-aufbau tr:nth-child(2) td, #tbl-aufbau tr:nth-child(4) td{
+    background-color: initial;
     border: 3px solid #000000;
 }
