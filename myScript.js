@@ -156,3 +156,33 @@ function showLanguage(language) {
         document.getElementById('english-content').style.display = 'block';
     }
 }
+
+
+// Width growing collums in a table
+document.querySelectorAll('.collapsible').forEach(function(collapsible) {
+  collapsible.addEventListener('click', function() {
+      var content = this.nextElementSibling;
+      var column = this.parentElement;
+      var otherColumns = document.querySelectorAll('.table > div:not(.collapsible-column)');
+      
+      if (content.style.display === 'block') {
+          content.style.display = 'none';
+          column.classList.remove('expanded');
+          otherColumns.forEach(function(col) {
+              col.classList.remove('shrink');
+          });
+      } else {
+          document.querySelectorAll('.collapsible-content').forEach(function(content) {
+              content.style.display = 'none';
+          });
+          document.querySelectorAll('.collapsible-column').forEach(function(column) {
+              column.classList.remove('expanded');
+          });
+          content.style.display = 'block';
+          column.classList.add('expanded');
+          otherColumns.forEach(function(col) {
+              col.classList.add('shrink');
+          });
+      }
+  });
+});
