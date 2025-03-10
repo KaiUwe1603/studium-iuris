@@ -934,16 +934,31 @@ body{
 }
 
 #tbl-echte-GoA tr:first-child th{
-    background-color: #034f84;
     color: #fff;
+    background-color: #034f84;
 }
 
-/*
-#92a8d1
-#f7cac9
-*/
+#tbl-echte-GoA tr:nth-child(2) th{
+    color: #fff;
+    background-color: linear-gradient(right, #034f84, #f7786b);
+}
 
+#tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
+    color: #fff;
+    background-color: #034f84;
+}
 
+#tbl-echte-GoA tr:nth-child(3) td:nth-child(2), #tbl-echte-GoA tr:nth-child(3) td:last-child{
+    background-color: #f7786b;
+}
+
+#tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(4) td:nth-child(3){
+    background-color: #92a8d1;
+}
+
+#tbl-echte-GoA tr:nth-child(4) td:nth-child(2), #tbl-echte-GoA tr:nth-child(4) td:last-child{
+    background-color: #f7cac9;
+}
 
 
 /*Sachenrecht*/
