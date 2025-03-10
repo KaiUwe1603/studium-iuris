@@ -925,31 +925,9 @@ body{
     border: 3px solid #f7786b;
 }
 
-#tbl-echte-GoA{
-    table-layout: auto;
-}
-
-#tbl-echte-GoA ul{
-    text-align: left;
-}
-
-#tbl-echte-GoA tr th{
+#tbl-echte-GoA th{
+    background-color: #000;
     color: #fff;
-    background-color: #034f84;
-}
-
-#tbl-echte-GoA tr:nth-child(2) th{
-    color: #fff;
-    background: linear-gradient(to right, #034f84 0%, #f7786b 100%);
-}
-
-#tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
-    background-color: #034f84;
-    color: #fff;
-}
-
-#tbl-echte-GoA tr:nth-child(3) td:nth-child(2), #tbl-echte-GoA tr:nth-child(3) td:last-child{
-    background-color: #f7786b;
 }
 
 /*
