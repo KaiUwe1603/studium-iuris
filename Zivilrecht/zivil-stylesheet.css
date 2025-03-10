@@ -1,10 +1,20 @@
+/* colors
+#ffc857 - Sunglow (Main Accent)
+#034f84 - Indigo dye (Dark Accent)
+#92a8d1 - Vista Blue (Dark Complimentary)
+#f7786b - Salmon (Light Accent)
+#f7cac9 - Tea rose (Light Complimentary)
+*/
+
+:root{
+    --main-accent: #ffc857;
+}
+
+
 /*Zivilrecht Global*/
 body{
     background-color: #ffe4e1;
 }
-
-
-/*Definitionen*/
 
 
 /*Schuldrecht AT*/
@@ -935,7 +945,7 @@ body{
 
 #tbl-echte-GoA tr:first-child th{
     color: #fff;
-    background-color: #034f84;
+    background-color: var(--main-accent);
 }
 
 #tbl-echte-GoA tr:nth-child(2) th{
