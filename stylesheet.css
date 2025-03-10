@@ -619,6 +619,10 @@ footer{
     margin-left: 15px;
 }
 
+.initial{
+    font-weight: initial;
+}
+
 .bold{
     font-weight: bold;
 }
