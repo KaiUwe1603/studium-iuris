@@ -940,7 +940,7 @@ body{
 
 #tbl-echte-GoA tr:nth-child(2) th{
     color: #fff;
-    background-color: linear-gradient(to right, #034f84 0%, #f7786b 100%);
+    background: linear-gradient(to right, #034f84 0%, #f7786b 100%);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
