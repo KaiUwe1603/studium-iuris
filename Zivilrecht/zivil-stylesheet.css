@@ -935,7 +935,7 @@ body{
     table-layout: auto;
 }
 
-#tbl-echte-GoA tr td ul{
+#tbl-echte-GoA tr td>ul{
     text-align: left;
     vertical-align: top;
 }
