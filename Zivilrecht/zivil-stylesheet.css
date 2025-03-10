@@ -937,6 +937,7 @@ body{
 
 #tbl-echte-GoA tr td ul{
     text-align: left;
+    vertical-align: top;
 }
 
 #tbl-echte-GoA tr:first-child th{
