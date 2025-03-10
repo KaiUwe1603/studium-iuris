@@ -925,8 +925,16 @@ body{
     border: 3px solid #f7786b;
 }
 
-#tbl-echte-GoA th{
-    background-color: #000;
+#tbl-echte-GoA{
+    table-layout: auto;
+}
+
+#tbl-echte-GoA tr td ul{
+    text-align: left;
+}
+
+#tbk-echte-GoA tr:first-child th{
+    background-color: #034f84;
     color: #fff;
 }
 
