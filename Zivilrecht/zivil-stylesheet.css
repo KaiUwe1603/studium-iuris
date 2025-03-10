@@ -1,13 +1,9 @@
-/* colors
-#ffc857 - Sunglow (Main Accent)
-#034f84 - Indigo dye (Dark Accent)
-#92a8d1 - Vista Blue (Dark Complimentary)
-#f7786b - Salmon (Light Accent)
-#f7cac9 - Tea rose (Light Complimentary)
-*/
-
 :root{
-    --main-accent: #ffc857;
+    --main-accent: #ffc857 /*Sunglow*/;
+    --dark-accent: #034f84 /*Indigo Dye*/;
+    --dark-comp: #92a8d1 /*Vista Blue*/;
+    --light-accent: #f7786b /*Salmon*/;
+    --light-comp: #f7cac9 /*Tea rose*/;
 }
 
 
@@ -944,30 +940,29 @@ body{
 }
 
 #tbl-echte-GoA tr:first-child th{
-    color: #fff;
     background-color: var(--main-accent);
 }
 
 #tbl-echte-GoA tr:nth-child(2) th{
     color: #fff;
-    background: linear-gradient(to right, #034f84 0%, #f7786b 100%);
+    background: linear-gradient(to right, var(--dark-accent) 0%, var(--light-accent) 100%);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
     color: #fff;
-    background-color: #034f84;
+    background-color: var(--dark-accent);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:nth-child(2), #tbl-echte-GoA tr:nth-child(3) td:last-child{
-    background-color: #f7786b;
+    background-color: var(--light-accent);
 }
 
 #tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(4) td:nth-child(3){
-    background-color: #92a8d1;
+    background-color: var(--dark-comp);
 }
 
 #tbl-echte-GoA tr:nth-child(4) td:nth-child(2), #tbl-echte-GoA tr:nth-child(4) td:last-child{
-    background-color: #f7cac9;
+    background-color: var(--light-comp);
 }
 
 
