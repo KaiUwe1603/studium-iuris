@@ -932,10 +932,15 @@ body{
 }
 
 #tbl-echte-GoA{
-    table-layout: auto;
+    table-layout: fixed;
 }
-
+/*
 #tbl-echte-GoA tr td>ul{
+    text-align: left;
+    vertical-align: top;
+}
+*/
+#tbl-echte-GoA tr td>ol{
     text-align: left;
     vertical-align: top;
 }
