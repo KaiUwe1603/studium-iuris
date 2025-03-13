@@ -942,14 +942,23 @@ body{
 */
 
 #tbl-echte-GoA ol {
-    list-style-position: outside; /* Standard */
-    padding-left: 2em; /* Platz für die Zahlen lassen */
+    list-style: none; /* Standardzählung entfernen */
+    counter-reset: list-counter;
 }
 
 #tbl-echte-GoA ol li {
-    text-indent: -2em; /* Zieht den Zähler nach links */
-    padding-left: 2em; /* Lässt den Text passend starten */
+    display: flex;
+    align-items: flex-start;
 }
+
+#tbl-echte-GoA ol li::before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    width: 2em; /* Platz für Zähler */
+    text-align: right;
+    margin-right: 0.5em; /* Abstand zum Button */
+}
+
 
 #tbl-echte-GoA tr:last-child td{
     text-align: left;
