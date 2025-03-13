@@ -935,6 +935,12 @@ body{
     table-layout: fixed;
 }
 
+#tbl-echte-GoA tr:last-child td{
+    text-align: left;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
 #tbl-echte-GoA ol {
     list-style: none; /* Standardzählung entfernen */
     counter-reset: list-counter;
@@ -951,12 +957,6 @@ body{
     width: 1em; /* Platz für Zähler */
     text-align: right;
     margin-right: 0.5em; /* Abstand zum Button */
-}
-
-
-#tbl-echte-GoA tr:last-child td{
-    text-align: left;
-    vertical-align: top;
 }
 
 #tbl-echte-GoA tr:first-child th{
