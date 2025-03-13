@@ -4,7 +4,6 @@
     --dark-comp: #92a8d1;   /*Vista Blue*/
     --light-accent: #f7786b;/*Salmon*/
     --light-comp: #f7cac9;  /*Tea rose*/
-
     --white: #ffffff;
     --black: #000000;
 }
@@ -983,8 +982,8 @@ body{
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:first-child{
-    background: linear-gradient(to top, var(--dark-accent) 0%, var(--dark-comp) 100%);
-    columns: var(--white);
+    background: linear-gradient(to top, var(--dark-comp) 0%, var(--dark-accent) 100%);
+    color: var(--white);
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:last-child{
