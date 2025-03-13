@@ -934,11 +934,11 @@ body{
 #tbl-echte-GoA{
     table-layout: fixed;
 }
-
+/*
 #tbl-echte-GoA tr:last-child td{
     text-align: left;
     vertical-align: top;
-}
+}*/
 
 #tbl-echte-GoA tr:first-child th{
     background-color: var(--main-accent);
