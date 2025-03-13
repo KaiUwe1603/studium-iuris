@@ -983,7 +983,12 @@ body{
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:first-child{
-    background: linear-gradient(to top var(--dark-accent) var(--dark-comp));
+    background: linear-gradient(to top var(--dark-accent) 0% var(--dark-comp) 100%);
+    columns: var(--white);
+}
+
+#tbl-unechte-GoA tr:nth-child(3) td:last-child{
+    background: linear-gradient(to top);
 }
 
 #tbl-unechte-GoA tr:last-child td:first-child{
