@@ -966,6 +966,34 @@ body{
     background-color: var(--light-comp);
 }
 
+#tbl-unechte-GoA tr th{
+    background-color: var(--main-accent);
+}
+
+#tbl-unechte-GoA tr:nth-child(2) td:first-child{
+    background-color: var(--dark-accent);
+}
+
+#tbl-unechte-GoA tr:nth-child(2) td:last-child{
+    background-color: var(--light-accent);
+}
+
+#tbl-unechte-GoA tr:nth-child(3) td:first-child{
+    background: linear-gradient(to top --dark-accent --dark-comp);
+}
+
+#tbl-unechte-GoA tr:last-child td:first-child{
+    background-color: var(--dark-comp);
+    text-align: left;
+    vertical-align: top;
+}
+
+#tbl-unechte-GoA tr:last-child td:last-child{
+    background-color: var(--light-comp);
+    text-align: left;
+    vertical-align: top;
+}
+
 
 /*Sachenrecht*/
 #tbl_sr tr:first-child th{
