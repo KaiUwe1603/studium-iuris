@@ -940,6 +940,17 @@ body{
     vertical-align: top;
 }
 */
+
+#tbl-echte-GoA ol {
+    list-style-position: outside; /* Standard */
+    padding-left: 2em; /* Platz für die Zahlen lassen */
+}
+
+#tbl-echte-GoA ol li {
+    text-indent: -2em; /* Zieht den Zähler nach links */
+    padding-left: 2em; /* Lässt den Text passend starten */
+}
+
 #tbl-echte-GoA tr:last-child td{
     text-align: left;
     vertical-align: top;
