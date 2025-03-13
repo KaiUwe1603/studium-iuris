@@ -1,9 +1,12 @@
 :root{
-    --main-accent: #ffc857 /*Sunglow*/;
-    --dark-accent: #034f84 /*Indigo Dye*/;
-    --dark-comp: #92a8d1 /*Vista Blue*/;
-    --light-accent: #f7786b /*Salmon*/;
-    --light-comp: #f7cac9 /*Tea rose*/;
+    --main-accent: #ffc857; /*Sunglow*/
+    --dark-accent: #034f84; /*Indigo Dye*/
+    --dark-comp: #92a8d1;   /*Vista Blue*/
+    --light-accent: #f7786b;/*Salmon*/
+    --light-comp: #f7cac9;  /*Tea rose*/
+
+    --white: #ffffff;
+    --black: #000000;
 }
 
 
@@ -945,12 +948,12 @@ body{
 }
 
 #tbl-echte-GoA tr:nth-child(2) th{
-    color: #fff;
+    color: var(--white);
     background: linear-gradient(to right, var(--dark-accent) 0%, var(--light-accent) 100%);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
-    color: #fff;
+    color: var(--white);
     background-color: var(--dark-accent);
 }
 
@@ -972,6 +975,7 @@ body{
 
 #tbl-unechte-GoA tr:nth-child(2) td:first-child{
     background-color: var(--dark-accent);
+    color: var(--white);
 }
 
 #tbl-unechte-GoA tr:nth-child(2) td:last-child{
@@ -979,7 +983,7 @@ body{
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:first-child{
-    background: linear-gradient(to top --dark-accent --dark-comp);
+    background: linear-gradient(to top var(--dark-accent) var(--dark-comp));
 }
 
 #tbl-unechte-GoA tr:last-child td:first-child{
