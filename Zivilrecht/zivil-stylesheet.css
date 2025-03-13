@@ -954,7 +954,7 @@ body{
 #tbl-echte-GoA ol li::before {
     content: counter(list-counter) ".";
     counter-increment: list-counter;
-    width: 2em; /* Platz für Zähler */
+    width: 1.5em; /* Platz für Zähler */
     text-align: right;
     margin-right: 0.5em; /* Abstand zum Button */
 }
