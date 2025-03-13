@@ -940,7 +940,7 @@ body{
     vertical-align: top;
 }
 */
-#tbl-echte-GoA tr td>ol{
+#tbl-echte-GoA tr:last-child td > ol:first-child{
     text-align: left;
     vertical-align: top;
 }
