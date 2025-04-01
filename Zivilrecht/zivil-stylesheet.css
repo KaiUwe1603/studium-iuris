@@ -942,6 +942,10 @@ body{
     vertical-align: top;
 }
 
+#tbl-echte-GoA tr:nth-child(4) td{
+    vertical-align: top;
+}
+
 #tbl-echte-GoA tr:first-child th{
     background-color: var(--main-accent);
 }
