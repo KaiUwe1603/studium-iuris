@@ -946,25 +946,25 @@ body{
     background-color: var(--main-accent);
 }
 
-#tbl-echte-GoA tr:nth-child(2) th{
+#tbl-echte-GoA tr:nth-child(2) th, #tbl-echte-GoA tr:nth-child(5){
     color: var(--white);
     background: linear-gradient(to right, var(--dark-accent) 0%, var(--light-accent) 100%);
 }
 
-#tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(3) td:nth-child(3){
+#tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(6) td:first-child{
     color: var(--white);
     background-color: var(--dark-accent);
 }
 
-#tbl-echte-GoA tr:nth-child(3) td:nth-child(2), #tbl-echte-GoA tr:nth-child(3) td:last-child{
+#tbl-echte-GoA tr:nth-child(3) td:last-child, #tbl-echte-GoA tr:nth-child(6) td:last-child{
     background-color: var(--light-accent);
 }
 
-#tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(4) td:nth-child(3){
+#tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(7) td:first-child{
     background-color: var(--dark-comp);
 }
 
-#tbl-echte-GoA tr:nth-child(4) td:nth-child(2), #tbl-echte-GoA tr:nth-child(4) td:last-child{
+#tbl-echte-GoA tr:nth-child(4) td:last-child, #tbl-echte-GoA tr:nth-child(7) td:last-child{
     background-color: var(--light-comp);
 }
 
