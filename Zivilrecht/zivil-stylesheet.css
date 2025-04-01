@@ -937,7 +937,7 @@ body{
     table-layout: fixed;
 }
 
-#tbl-echte-GoA tr:last-child td{
+#tbl-echte-GoA ul, #tbl-echte-GoA ol{
     text-align: left;
     vertical-align: top;
 }
