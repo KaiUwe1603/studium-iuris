@@ -3,12 +3,14 @@
   background-color: #d3d3d3;
   border-radius: 5px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
 }
 
 /* Jede Slide zentriert */
 .carousel-item {
-  text-align: center;
+    text-align: left;
+    padding-left: 50px;
 }
 
 /* Listen innerhalb der Slides ordentlich formatieren */
