@@ -187,8 +187,9 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
   });
 });
 
-//Slider-Strafrecht-Aufbau
 
+//Slider-Strafrecht-Aufbau
+document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 0;
   const slides = document.querySelector(".slides");
   const totalSlides = document.querySelectorAll(".slides ol").length;
@@ -197,16 +198,17 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
 
-  function nextSlide() {
+  window.nextSlide = function () {
     if (currentSlide < totalSlides - 1) {
       currentSlide++;
       updateSlide();
     }
-  }
+  };
 
-  function prevSlide() {
+  window.prevSlide = function () {
     if (currentSlide > 0) {
       currentSlide--;
       updateSlide();
     }
-  }
+  };
+});
