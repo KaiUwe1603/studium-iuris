@@ -6,28 +6,26 @@
   padding: 10px;
   overflow: hidden;
   position: relative;
-  /* Breite kannst du anpassen oder auf 100% setzen */
-  width: 650px; /* Beispielbreite für den Slider */
-  margin: 0 auto; /* zentriert */
+  width: 650px;
+  margin: 0 auto;
 }
 
 .slider-window {
-  width: 600px; /* Breite des sichtbaren Bereichs */
+  width: 600px;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
-  /* Keine feste Breite setzen, wächst mit Inhalt */
 }
 
 .slides ol {
-  min-width: 600px; /* Gleiche Breite wie .slider-window */
+  min-width: 600px;
   margin: 0;
   padding: 0 1em;
   list-style-position: inside;
-  box-sizing: border-box; /* Padding nicht addieren zur Breite */
+  box-sizing: border-box;
 }
 
 .arrow {
@@ -42,3 +40,4 @@
 .arrow:focus {
   outline: none;
 }
+

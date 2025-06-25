@@ -188,18 +188,18 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
 });
 
 
-//Slider-Strafrecht-Aufbau
 document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 0;
   const slides = document.querySelector(".slides");
-  const totalSlides = document.querySelectorAll(".slides ol").length;
+  const slideCount = slides.children.length;
+  const slideWidth = 600; // muss mit CSS .slider-window / ol width übereinstimmen
 
   function updateSlide() {
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   }
 
   window.nextSlide = function () {
-    if (currentSlide < totalSlides - 1) {
+    if (currentSlide < slideCount - 1) {
       currentSlide++;
       updateSlide();
     }
