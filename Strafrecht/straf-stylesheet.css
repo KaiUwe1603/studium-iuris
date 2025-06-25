@@ -1,6 +1,7 @@
 /*Global*/
 body{
     background-color: #87CEFA;
+    margin: 8px;
 }
 
 /* Grauer Hintergrundblock mit Border-Radius */
@@ -39,7 +40,6 @@ body{
 .carousel-control-next {
   width: auto;
   padding: 0 1rem;
-  top: 50%;
   position: absolute;
 }
 
