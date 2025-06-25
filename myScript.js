@@ -186,3 +186,27 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
       }
   });
 });
+
+//Slider-Strafrecht-Aufbau
+
+  let currentSlide = 0;
+  const slides = document.querySelector(".slides");
+  const totalSlides = document.querySelectorAll(".slides ol").length;
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlide();
+    }
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlide();
+    }
+  }
