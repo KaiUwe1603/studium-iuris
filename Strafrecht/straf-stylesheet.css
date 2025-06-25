@@ -1,14 +1,15 @@
 .list-slider {
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #d3d3d3;
   padding: 10px;
   overflow: hidden;
   position: relative;
 }
 
 .slider-window {
-  width: 100%;
+  width: fit-content;
   overflow: hidden;
 }
 
