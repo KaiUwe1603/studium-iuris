@@ -6,17 +6,17 @@ body{
 
 /* Grauer Hintergrundblock mit Border-Radius */
 .carousel-inner {
-  background-color: #d3d3d3;
-  border-radius: 5px;
-  padding: 1.5rem;
-  text-align: left;
-  padding-left: 70px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: left;
+    margin-left: 10px;
 }
 
 /* Jede Slide zentriert */
 .carousel-item {
     text-align: left;
-    padding-left: 70px;
+    margin-left: 10px;
 }
 
 /* Listen innerhalb der Slides ordentlich formatieren */
