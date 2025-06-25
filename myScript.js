@@ -186,20 +186,3 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
       }
   });
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll('#listCarousel .carousel-item');
-    let maxHeight = 0;
-
-    // Max Höhe der Slides ermitteln
-    items.forEach(item => {
-      item.style.height = 'auto'; // Reset
-      const itemHeight = item.offsetHeight;
-      if (itemHeight > maxHeight) maxHeight = itemHeight;
-    });
-
-    // Höhe aller Slides auf maxHeight setzen
-    items.forEach(item => {
-      item.style.height = maxHeight + 'px';
-    });
-  });

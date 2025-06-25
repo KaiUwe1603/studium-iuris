@@ -1,26 +1,32 @@
+/* Grauer Hintergrundblock mit Border-Radius */
 .carousel-inner {
   background-color: #d3d3d3;
   border-radius: 5px;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
-  align-items: center; /* vertikale Zentrierung */
-  width: fit-content;
-  margin: 0 auto;
-  position: relative; /* für Buttons-Positionierung */
 }
 
+/* Jede Slide zentriert */
 .carousel-item {
   display: flex;
   justify-content: center;
-  align-items: center; /* vertikale Zentrierung */
-  /* Höhe wird per JS gesetzt */
-  width: 100%;
 }
 
+/* Listen innerhalb der Slides ordentlich formatieren */
 .carousel-item ol {
   padding-left: 1.25rem;
   margin: 0;
+}
+
+/* Zentrierung des Karussells insgesamt */
+#listCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto;
 }
 
 /* Buttons positionieren */
@@ -28,12 +34,9 @@
 .carousel-control-next {
   width: auto;
   padding: 0 1rem;
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: black; /* evtl. anpassen */
-  background: transparent;
-  border: none;
+  position: absolute;
 }
 
 .carousel-control-prev {
@@ -43,4 +46,3 @@
 .carousel-control-next {
   right: -3rem;
 }
-
