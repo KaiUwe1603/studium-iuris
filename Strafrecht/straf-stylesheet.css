@@ -1,5 +1,6 @@
 .list-slider {
   display: flex;
+  width: fit-content;
   align-items: center;
   border-radius: 5px;
   background-color: #d3d3d3;
