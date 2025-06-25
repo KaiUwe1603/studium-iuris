@@ -27,7 +27,7 @@ body{
 /* Zentrierung des Karussells insgesamt */
 #listCarousel {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   position: relative;
   width: fit-content;
