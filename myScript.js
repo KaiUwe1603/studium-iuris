@@ -65,16 +65,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Code for the second list (Roman numerals)
-counter = 1;
+document.querySelectorAll('.onsitenav-roman').forEach(function(romanNav) {
+    let counterRoman = 1;
 
-document.querySelectorAll('.onsitenav-roman ul li').forEach(function (item) {
-  let anchor = item.querySelector('a');
- 
-  if (anchor) {
-    anchor.textContent = toRoman(counter) + '. ' + anchor.textContent;
-    counter++;
-  }
-});
+    romanNav.querySelectorAll('ul li').forEach(function (item) {
+      let anchor = item.querySelector('a');
+      if (anchor) {
+        anchor.textContent = toRoman(counterRoman) + '. ' + anchor.textContent;
+        counterRoman++;
+      }
+    });
+  });
 
 // Function to convert Arabic numerals to Roman numerals
 function toRoman(num) {

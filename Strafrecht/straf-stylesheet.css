@@ -1,3 +1,8 @@
+/*Global*/
+body{
+    background-color: #87CEFA;
+}
+
 /* Grauer Hintergrundblock mit Border-Radius */
 .carousel-inner {
   background-color: #d3d3d3;

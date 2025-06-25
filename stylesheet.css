@@ -5,10 +5,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     padding-bottom: 22px;
-}
-
-.bodys{
-    background-color: #87CEFA;
+    margin: 8px;
 }
 
 .comingsoon{
