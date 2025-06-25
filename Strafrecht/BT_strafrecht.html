@@ -150,34 +150,34 @@
             </ul>
         </div>
 
-        <div class="list-slider">
-            <button class="arrow left" onclick="prevSlide()">&#8592;</button>
-
-            <div class="slider-window">
-                <div class="slides">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
                 <ol>
                     <li>Inhalt Liste 1 – Punkt A</li>
                     <li>Inhalt Liste 1 – Punkt B</li>
                     <li>Inhalt Liste 1 – Punkt C</li>
                 </ol>
+            </div>
+
+            <div class="mySlides fade">
                 <ol>
                     <li>Inhalt Liste 2 – Punkt A</li>
                     <li>Inhalt Liste 2 – Punkt B</li>
+                    <li>Inhalt Liste 2 – Punkt C</li>
                 </ol>
+            </div>
+
+            <div class="mySlides fade">
                 <ol>
                     <li>Inhalt Liste 3 – Punkt A</li>
                     <li>Inhalt Liste 3 – Punkt B</li>
                     <li>Inhalt Liste 3 – Punkt C</li>
-                    <li>Inhalt Liste 3 – Punkt D</li>
                 </ol>
-                <ol>
-                    <li>Inhalt Liste 4 – Punkt A</li>
-                    <li>Inhalt Liste 4 – Punkt B</li>
-                </ol>
-                </div>
             </div>
 
-            <button class="arrow right" onclick="nextSlide()">&#8594;</button>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
         <h3 class="underline" id="brandstiftung">Brandstiftung</h3>

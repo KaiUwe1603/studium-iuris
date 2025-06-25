@@ -1,43 +1,57 @@
-.list-slider {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #d3d3d3;
-  padding: 10px;
-  overflow: hidden;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  width: 650px;
-  margin: 0 auto;
+  margin: auto;
+  background-color: #d3d3d3;
+  border-radius: 5px;
 }
 
-.slider-window {
-  width: 600px;
-  overflow: hidden;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slides ol {
-  min-width: 600px;
-  margin: 0;
-  padding: 0 1em;
-  list-style-position: inside;
-  box-sizing: border-box;
-}
-
-.arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
-  color: black;
-  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.arrow:focus {
-  outline: none;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

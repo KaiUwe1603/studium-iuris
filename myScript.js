@@ -188,27 +188,3 @@ document.querySelectorAll('.collapsible').forEach(function(collapsible) {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  let currentSlide = 0;
-  const slides = document.querySelector(".slides");
-  const slideCount = slides.children.length;
-  const slideWidth = 600; // muss mit CSS .slider-window / ol width übereinstimmen
-
-  function updateSlide() {
-    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }
-
-  window.nextSlide = function () {
-    if (currentSlide < slideCount - 1) {
-      currentSlide++;
-      updateSlide();
-    }
-  };
-
-  window.prevSlide = function () {
-    if (currentSlide > 0) {
-      currentSlide--;
-      updateSlide();
-    }
-  };
-});
