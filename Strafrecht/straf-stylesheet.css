@@ -3,14 +3,12 @@
   background-color: #d3d3d3;
   border-radius: 5px;
   padding: 1.5rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 /* Jede Slide zentriert */
 .carousel-item {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 /* Listen innerhalb der Slides ordentlich formatieren */
@@ -35,7 +33,6 @@
   width: auto;
   padding: 0 1rem;
   top: 50%;
-  transform: translateY(-50%);
   position: absolute;
 }
 
