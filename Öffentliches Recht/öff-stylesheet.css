@@ -1,15 +1,34 @@
-/*Global*/
-.bodyÖR{
-    background-color: #dcdcdc;
+:root{
+    /*Color Palette*/
+    --white: #ffffff;
+    --black: #000000;
+
+    /*Grundrechte*/
+
+
+    /*Staatsorga*/
+
+
+    /*Verwaltungsrecht*/
+    --main-accent-VR: #3b3734;
+    --red-accent-VR: #943c4c;
+    --gold-accent-VR: #ae6b38;
+    --blue-accent-VR: #839faa;
+
+    /*Europarecht*/
+    --main-accent-ER: #003399;
+    --dark-accent-ER: #d72638;
+    --dark-comp-ER: #f4a8a8;
+    --light-accent-ER: #008080;
+    --light-comp-ER: #a7c7e7;
+
 }
 
-/*Color Palette
-#dcdcdc (light-shade)
-#839faa (light-accent)
-#943c4c (main)
-#ae6b38 (dark-accent)
-#3b3734 (dark-shade)
-*/
+
+/*Global*/
+body{
+    background-color: #dcdcdc;
+}
 
 
 /*Staatsorga*/

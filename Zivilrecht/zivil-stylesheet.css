@@ -6,6 +6,21 @@
     --light-comp: #f7cac9;  /*Tea rose*/
     --white: #ffffff;
     --black: #000000;
+    --grey: #a9a9a9;
+
+    /*Color Palette Schuldrecht*/
+    --main-accent-ZR: #ffc857; /*Sunglow*/
+    --dark-accent-ZR: #034f84; /*Indigo Dye*/
+    --dark-comp-ZR: #92a8d1;   /*Vista Blue*/
+    --light-accent-ZR: #f7786b;/*Salmon*/
+    --light-comp-ZR: #f7cac9;  /*Tea rose*/
+
+    /*Color Palette Sachenrecht*/
+
+    /*Color Palette Familienrecht*/
+
+    /*Color Palette Erbrecht*/
+
 }
 
 
@@ -14,42 +29,7 @@ body{
     background-color: #ffe4e1;
 }
 
-
 /*Schuldrecht AT*/
-#table_stv{
-    width: 50%;
-    height: 200px;
-    border-collapse: separate;
-    border-spacing: 10px;
-    text-align: center;
-}
-
-#table_stv tr:first-child td:first-child{
-    height: 50px;
-    background-color: #1E90FF;
-    border-radius: 5px;
-    font-weight: bolder;
-}
-
-#table_stv tr:nth-child(2) td:nth-child(1){
-    height: 50px;
-    background-color: #1E90FF;
-    border-radius: 5px;
-}
-
-#table_stv td:nth-child(1){
-    height: 50px;
-    width: 50%;
-    background-color: #FF1E90;
-    border-radius: 5px;
-}
-
-#table_stv td:nth-child(2){
-    height: 50px;
-    width: 50%;
-    background-color: #90FF1E;
-    border-radius: 5px;
-}
 
 #table_stv tr:nth-child(3){
     font-weight: bolder;
@@ -66,7 +46,7 @@ body{
 }
 
 #tbl_gfk tr:first-child td:first-child{
-    background-color: #A9A9A9;
+    background-color: var(--grey);
 }
 
 #tbl_gfk tr:first-child td:nth-child(2){
@@ -74,7 +54,7 @@ body{
 }
 
 #tbl_gfk tr:first-child td:nth-child(3){
-    background-color: #A9A9A9;
+    background-color: var(--grey);
 }
 
 #tbl_gfk tr:nth-child(2){
@@ -122,6 +102,49 @@ body{
     background-color: #1FFF1E;   
 }
 
+#tbl_stv{
+    width: 50%;
+    height: 200px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+#tbl_stv tr td{
+    border-radius: 5px;
+    height: 50px;
+}
+
+#tbl_stv tr th{
+    height: 50px;
+    background-color: var(--main-accent-ZR);
+    border-radius: 5px;
+}
+
+#tbl_stv tr:nth-child(2) td{
+    background-color: var(--main-accent-ZR);
+}
+
+#tbl_stv tr:nth-child(3) td:nth-child(1){
+    width: 50%;
+    background-color: var(--dark-accent-ZR);
+}
+
+#tbl_stv tr:nth-child(3) td:nth-child(2){
+    width: 50%;
+    background-color: var(--light-accent-ZR);
+}
+
+#tbl_stv tr:nth-child(4) td:nth-child(1){
+    width: 50%;
+    background-color: var(--dark-comp-ZR);
+}
+
+#tbl_stv tr:nth-child(4) td:nth-child(2){
+    width: 50%;
+    background-color: var(--light-comp-ZR);
+}
+
 
 /*Schuldrecht BT*/
 .olbracket{
@@ -167,7 +190,7 @@ body{
     width: 20%;
     background-color: initial;
     color: initial;
-    border: 3px dashed #A9A9A9;
+    border: 3px dashed var(--grey);
     font-size: large;
     font-weight: initial;
 }
@@ -186,7 +209,7 @@ body{
 
 #tbl-schenkung tr:nth-child(3) td:last-child{
     width: 20%;
-    border: 2px dotted #A9A9A9;
+    border: 2px dotted var(--grey);
 }
 
 #tbl-schenkung tr:nth-child(3) td > ol{
@@ -947,25 +970,37 @@ body{
 }
 
 #tbl-echte-GoA tr:first-child th{
-    background-color: var(--main-accent);
+    background-color: var(--main-accent-ZR);
 }
 
 #tbl-echte-GoA tr:nth-child(2) th, #tbl-echte-GoA tr:nth-child(5){
     color: var(--white);
-    background: linear-gradient(to right, var(--dark-accent) 0%, var(--light-accent) 100%);
+    background: linear-gradient(to right, var(--dark-accent-ZR) 0%, var(--light-accent-ZR) 100%);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:first-child, #tbl-echte-GoA tr:nth-child(6) td:first-child{
     color: var(--white);
-    background-color: var(--dark-accent);
+    background-color: var(--dark-accent-ZR);
+}
+
+#tbl-echte-GoA tr:nth-child(3) td:nth-child(2), #tbl-echte-GoA tr:nth-child(3) td:last-child{
+    background-color: var(--light-accent-ZR);
 }
 
 #tbl-echte-GoA tr:nth-child(3) td:last-child, #tbl-echte-GoA tr:nth-child(6) td:last-child{
     background-color: var(--light-accent);
 }
 
+#tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(4) td:nth-child(3){
+    background-color: var(--dark-comp-ZR);
+}
+
 #tbl-echte-GoA tr:nth-child(4) td:first-child, #tbl-echte-GoA tr:nth-child(7) td:first-child{
     background-color: var(--dark-comp);
+}
+
+#tbl-echte-GoA tr:nth-child(4) td:nth-child(2), #tbl-echte-GoA tr:nth-child(4) td:last-child{
+    background-color: var(--light-comp-ZR);
 }
 
 #tbl-echte-GoA tr:nth-child(4) td:last-child, #tbl-echte-GoA tr:nth-child(7) td:last-child{
@@ -973,35 +1008,35 @@ body{
 }
 
 #tbl-unechte-GoA tr th{
-    background-color: var(--main-accent);
+    background-color: var(--main-accent-ZR);
 }
 
 #tbl-unechte-GoA tr:nth-child(2) td:first-child{
-    background-color: var(--dark-accent);
+    background-color: var(--dark-accent-ZR);
     color: var(--white);
 }
 
 #tbl-unechte-GoA tr:nth-child(2) td:last-child{
-    background-color: var(--light-accent);
+    background-color: var(--light-accent-ZR);
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:first-child{
-    background: linear-gradient(to top, var(--dark-comp) 0%, var(--dark-accent) 100%);
+    background: linear-gradient(to top, var(--dark-comp-ZR) 0%, var(--dark-accent-ZR) 100%);
     color: var(--white);
 }
 
 #tbl-unechte-GoA tr:nth-child(3) td:last-child{
-    background: linear-gradient(to top, var(--light-comp) 0%, var(--light-accent) 100%);
+    background: linear-gradient(to top, var(--light-comp-ZR) 0%, var(--light-accent-ZR) 100%);
 }
 
 #tbl-unechte-GoA tr:last-child td:first-child{
-    background-color: var(--dark-comp);
+    background-color: var(--dark-comp-ZR);
     text-align: left;
     vertical-align: top;
 }
 
 #tbl-unechte-GoA tr:last-child td:last-child{
-    background-color: var(--light-comp);
+    background-color: var(--light-comp-ZR);
     text-align: left;
     vertical-align: top;
 }
